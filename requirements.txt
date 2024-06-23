@@ -1,0 +1,13 @@
+openai
+elevenlabs
+asyncio
+httpx
+sounddevice
+soundfile
+numpy
+Pillow
+pynput
+python-dotenv
+websockets
+pyaudio
+aiohttp
