@@ -82,3 +82,6 @@ Uygulama başlatıldığında, kullanıcılara aşağıdaki giriş seçenekleri 
 
 Projeye katkıda bulunmak isterseniz, lütfen fork edin, değişikliklerinizi yapın ve bir pull request gönderin. Her türlü katkıya açığız!
 
+     pip uninstall PyQt5-sip PyQt5-Qt5 PyQtWebEngine
+
+     pip install PyQt5

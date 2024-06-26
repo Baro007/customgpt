@@ -1,0 +1,119 @@
+Kullanıcı: Merhaba ben Barış, sen kimsin?
+GPT-4: Merhaba Barış! Ben bir yapay zeka asistanıyım. Sana nasıl yardımcı olabilirim?
+
+Kullanıcı: Anladım, yanımda Ada var, onunla konuşmak ister misin? Ada 3 yaşında bir çocuk.
+GPT-4: Tabii ki, Ada'ya merhaba demek isterim! Merhaba Ada! Nasılsın? Hangi oyunları oynuyorsun?
+
+Kullanıcı: adasaklambaç oynuyormuş başka ne oynuyorsun ada kovalamaca kovalamaca oynuyormuş eee başka sen 3 yaşındaki bir çocuğa oyun oynayabilir misin
+GPT-4: Tabii, 3 yaşındaki bir çocukla oyun oynamak eğlenceli olur! Saklambaç, kovalamaca, balonlarla oynamak, lego yapmak gibi şeyler oynayabiliriz. Sen hangilerini seviyorsun?
+
+Kullanıcı: Abone olmayı unutmayın
+GPT-4: Haha! Bu bir YouTube videosu değil ama sağ ol uyarı için! Ayrıca buradayken başka bir şey sormak ister misin?
+
+Kullanıcı: çiçeği böyle değiştiremiyorum tabi o çok güzel bir şey ben onu istetir miyiz kalsam yani farklı olacak evet dur kimi arayalım kimi arayalım Suat Teyze senin telefonun yanında mı? senin yanında galiba kimi aradın aç açsana hadi hadi gel kalk hop hop ne yapıyorsun gördün mü hadi sen de yap sen de yap ana sen de gönder bana hadi bakalım bir daha sen de yap bak böyle bak şunlar şöyle öp öp benim sesim o benim o benim o benim o benim o benim ne ne yap ekrana doğru yap gördün mü tam kalp yapıyor hadi 1-2-3 geliyor o ne o ne patlat kalpleri niye patlatmıyor niye patlatmıyor bak ne çıkarttık sana süpersin süpersin ne ne ne ne ne ne ne ne ne ne ne ne
+GPT-4: Hey, her şey yolunda mı? Biraz karışık görünüyor burası. Yardımcı olabileceğim bir şey var mı?
+
+Kullanıcı: Merhaba, şu anda benim ekranımda ne var acaba?
+GPT-4: Ekranınızda bir kod editörü (muhtemelen Visual Studio Code) açık ve bir Python betiği üzerinde çalışıyorsunuz. Sol tarafta dosya gezgini, ortada açık olan bir Python dosyası (doktor.py) ve terminal bulunuyor. Terminal bölümünde bazı HTTP isteklerine ait loglar yer alıyor. Python dosyasında ise çeşitli kütüphaneler (openai, elevenlabs, asyncio, os, json, vb.) içe aktarılmış ve API anahtarları gibi konfigürasyonlar yüklenmiş durumda. Ayrıca, birkaç farklı sekme (README.md, requirements.txt, yeni.py, output.mp3) de açık durumda.
+
+Kullanıcı: Merhaba ada 3 yaşında bir çocuk sana daha önceden bahsetmiştim hadi adayla oyun oynayalım onunla oynayabileceğimiz şekilde bir oyun bulur musun?
+GPT-4: Tabii ki! Ne dersin, "Küçük bir hazine avı" yapalım mı? Evde onun sevdiği oyuncakları ya da küçük nesneleri sakla ve ona ipuçları vererek bulmasını sağla. Bu şekilde hem eğlenir hem de keşfetmiş olur! Ne dersin?
+
+Kullanıcı: Dokunma, adanın yarasına dokunma, dokunma.
+GPT-4: Sanırım bu şarkı sözleri değil mi? Sanki Sezen Aksu söylüyordu.
+
+Kullanıcı: Hayır, bunu Sezen Aksu söylemiyor. Bunu Zeynep Ada söylüyor.
+GPT-4: Sanırım bir karışıklık oldu. Sezen Aksu ve Zeynep Ada farklı sanatçılar, söyledikleri şarkılar da farklı olabilir. Hangi şarkıdan bahsediyordun?
+
+Kullanıcı: Yağmur yayıyor, sular akıyor, Arap kızı camdan bakıyor. Bu şarkıyı mı söylüyorsun?
+GPT-4: Evet, o şarkıyı biliyorum! "Arap kızı camdan bakıyor" kısmı özellikle akılda kalıcı. Nostalji yaptırıyor. 😊
+
+Kullanıcı: Üç. Hadi bize Yağmur Yağıyor şarkısını söyler misin biraz?
+GPT-4: Oh, şey… Pek iyi şarkı söyleyemem ama sözlerini hatırlayabilirim galiba. "Yağmur yağıyor, seller akıyor, Arap kızı camdan bakıyor..." gibi gidiyordu değil mi?
+
+Kullanıcı: Evet, Zeynep odada öyle söylüyor zaten.
+GPT-4: Anladım, Zeynep ne söylüyordu? Biraz daha detay verir misin?
+
+Kullanıcı: O kimdi ya? Biliyom Biliyom lan
+GPT-4: Bahsettiğin kim acaba? İpucu verebilir misin? 😊
+
+Kullanıcı: Thank you for watching.
+GPT-4: Rica ederim, nasıl yardımcı olabilirim?
+
+Kullanıcı: Biz bir kere İzmir'den Antalya'ya gittik. Şu anda ekranımda ne var?
+GPT-4: Ekranınızda bir FaceTime penceresi açık ve FaceTime uygulamasında daha önce yapılan aramaların listesi görüntüleniyor. Ekranın sağ tarafında ise bir video görüşmesi sırasında çekilmiş gibi görünen, pencere önünde duran iki kişinin (bir yetişkin ve bir çocuk) bir görüntüsü var. Bu sırada arka planda bir manzara fotoğrafı veya masaüstü duvar kâğıdı görünüyor.
+
+Ayrıca, ekranın alt kısmında dock çubuğunda çeşitli uygulama simgeleri yer almakta, bunlar arasında Mail, Safari, Apple Calendar, Apple Maps, Mesajlar, Microsoft Word ve bazı diğer uygulamalar bulunuyor. "Visual Studio Code" uygulaması da açık durumda. Sağ üst köşede tarih ve saat bilgisi (23 Haziran 22:38) yer alıyor.
+
+Kullanıcı: Merhaba ben Barış Sankipsi
+GPT-4: Merhaba Barış! Nasılsın?
+
+Kullanıcı: Thank you so much for watching
+GPT-4: Bir şey değil! Başka yardımcı olabileceğim bir şey var mı?
+
+Kullanıcı: 영상편집 및 자막 제공 및 협조해주신 모든 분들께 진심으로 감사드립니다.
+GPT-4: 영상편집이랑 자막 작업 정말 고생 많았어요. 모두들 정말 teşekkür ediyor!
+
+Kullanıcı: Thank you so much for watching
+GPT-4: Rica ederim! Başka bir şey var mıydı?
+
+Kullanıcı: Thank you so much for watching !
+GPT-4: Rica ederim! Keyif aldıysan ne mutlu bana. Başka bir şey izlemek ister misin?
+
+Kullanıcı: If you enjoyed this video, please like and subscribe!
+GPT-4: Evet, aynen öyle! YouTube'da sıkça duyduğumuz bir cümle. Sen de içerik üreticisi misin?
+
+Kullanıcı: sen kimsin?
+GPT-4: Merhaba, ben bir yapay zeka asistanıyım. Sana nasıl yardımcı olabilirim?
+
+Kullanıcı: Merhaba, ekranımda gözüken 12. sorunun çözümü nedir acaba?
+GPT-4: Üzgünüm, ama ekran görüntüsünde yer alan metnin tamamını net bir şekilde göremiyorum ve bu sebeple belirli bir sorunun çözümünü sağlayamıyorum. Ekranda gözüken sorunun tam metnini veya spesifik detaylarını paylaşırsanız, size daha iyi yardımcı olabilirim.
+
+Kullanıcı: Peki benim ekranımda ne var şu anda?
+GPT-4: Ekranınızda Visual Studio Code adlı bir kod editörü uygulaması açık. Kod editörü Python diliyle yazılmış bir projeyi gösteriyor. Ekranın alt kısmında bir terminal bölümü bulunuyor ve bu bölümde yapılan HTTP isteklerinin çıktıları görünüyor; bu isteklerin OpenAI'nin çeşitli API endpoint'lerine yapıldığı görülüyor. Masaüstü arka planında ise bir doğa manzarası bulunuyor ve ekranın sol tarafında macOS'un tipik dock menüsü ile bir dizi uygulama simgesi görünüyor. Ekranın üst kısmında macOS menü çubuğu ve saatin olduğu gözlemlenebilir.
+
+Kullanıcı: 6.sorunun çözümü nedir?
+GPT-4: 6. sorunun ne olduğunu söylemeden cevabını veremem ki! Soruyu paylaşır mısın?
+
+Kullanıcı: Ekranında gördüğün 6.sorunun çözümü nedir?
+GPT-4: 6. sorudaki seçenekler:
+
+A) Cushing sendromu
+B) Polisitemi
+C) Hipertrofik osteoartropati
+D) Saf kırmızı küre aplazisi
+E) Parkinson hastalığı
+
+Paraneoplastik sendromlar, kanserle ilişkili gelişen, ancak kanserin primer yayılımı veya metastazı ile açıklanamayan sistemik semptomlardır. Akciğer kanseri gibi bazı kanser türleri paraneoplastik sendromlara neden olabilir.
+
+Listeye baktığımızda: 
+- Cushing sendromu, ACTH üretimi sonucu Küçük hücreli karsinomda görülür.
+- Polisitemi, bazı tümörlerde görülebilir.
+- Hipertrofik osteoartropati, akciğer kanserleriyle ilişkilidir.
+- Saf kırmızı küre aplazisi bazı tümörlerle ilişkilidir.
+
+Ancak, Parkinson hastalığı paraneoplastik bir sendrom olarak bilinmez. Bu nedenle, doğru cevap:
+
+E) Parkinson hastalığı
+
+Kullanıcı: Merhaba, ekranımda bulunan 30. sorunun çözümü nedir acaba?
+GPT-4: Ekranınızda görünen 30. soru ve cevabı şu şekilde:
+
+**Soru:**
+30. Altı aylık bir erkek bebek öksürük ve ateş nedeniyle getiriliyor. Öyküsünden şimdiye kadar 2 kez akciğer enfeksiyonu nedeniyle, 1 kez de metabolik alkaloz tablosu ile hastaneye yattığı, günde 8-10 kez safra gibi yağlı dışkılama yaptığı ve benzer şikayetler olan kız kardeşinin de 8 aylık olduğu öğreniliyor.
+
+Bu bebekte aşağıdaki testlerden hangisi tanı koymada en yardımcıdır?(Eylül 2008)
+A) Akciğer tomografisi
+B) Terde klor ölçümü
+C) Serum antikor düzeylerinin belirlenmesi
+D) Serum renin-aldosteron düzeylerine bakılması
+E) Dışkıda yağ tayini
+
+**Cevap:**
+B) Terde klor ölçümü
+
+Bu soruda, verilen belirtiler ve aile öyküsü, kistik fibrozis gibi bir durumu düşündürmektedir. Kistik fibrozis tanısını koymak için en yaygın kullanılan testlerden biri terde klor ölçümüdür. Bu nedenle, doğru cevap B) Terde klor ölçümüdür.
+
+Kullanıcı: Bir önceki sorunun doğru cevabı neydi?
+GPT-4: Üzgünüm, önceki konuşmayı göremiyorum ve ne sorduğunu hatırlamıyorum. Bana hatırlatabilir misin?
+

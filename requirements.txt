@@ -1,13 +1,11 @@
+asyncio
 openai
 elevenlabs
-asyncio
 httpx
 sounddevice
 soundfile
 numpy
-Pillow
-pynput
+pillow
 python-dotenv
-websockets
-pyaudio
-aiohttp
+PyQt5
+qasync

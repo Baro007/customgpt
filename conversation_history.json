@@ -1,0 +1,170 @@
+[
+  {
+    "role": "user",
+    "content": "Merhaba, sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir AI asistanıyım. Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "3 artı 5 kaçtır?"
+  },
+  {
+    "role": "assistant",
+    "content": "3 artı 5, 8 eder."
+  },
+  {
+    "role": "user",
+    "content": "Önceki sorunun cevabı kaçtı?"
+  },
+  {
+    "role": "assistant",
+    "content": "Önceki sorunun cevabı 8 idi."
+  },
+  {
+    "role": "user",
+    "content": "on dördüncü sorunun cevabı nedir?"
+  },
+  {
+    "role": "assistant",
+    "content": "On dördüncü sorunun cevabı görüntüde sağ tarafta yer almaktadır. Cevap şıkları ve doğru cevabı şu şekildedir:\n\n14. Altı yaşında bir erkek çocukta orbita içinde yer alan, yuvarlak/iğsi hücrelerden oluşan, immünohistokimyasal olarak desmin pozitif olan tümör saptanmıştır. Bu tümör aşağıdakilerden hangisidir? (Eylül 2006)\nA) Ewing sarkomu\nB) Burkitt lenfoması\nC) Nöroblastom\nD) Rabdomiyosarkom\n\nDoğru cevap: D) Rabdomiyosarkom"
+  },
+  {
+    "role": "user",
+    "content": "Yapay zekanın geleceği hakkında ne düşünüyorsun?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yapay zekanın geleceği oldukça parlak görünüyor. Daha akıllı, etkin ve insan hayatını kolaylaştıran teknolojiler geliştiriliyor. Tabii, etik ve güvenlik konuları da önemli olacak."
+  },
+  {
+    "role": "user",
+    "content": "14. sorunun cevabı neydi hatırlıyor musun?"
+  },
+  {
+    "role": "assistant",
+    "content": "Üzgünüm, burada daha önce 14. bir soru görmedim. Yardımcı olabileceğim başka bir şey var mı?"
+  },
+  {
+    "role": "user",
+    "content": "Cevabı rabdomiosarcom olan soruyu hatırlıyor musun?"
+  },
+  {
+    "role": "assistant",
+    "content": "Evet, hatırlıyorum. Sorunun cevabı rabdomiyosarkomdu. Başka bir şey sormak ister misin?"
+  },
+  {
+    "role": "user",
+    "content": "Oradaki çocuk kaç yaşındaydı?"
+  },
+  {
+    "role": "assistant",
+    "content": "Görünüşe göre bir masaüstü ekran görüntüsüne bakıyorum ve evet, çeşitli uygulama pencereleri açık. Ancak bu görüntüde bir çocuk görünmüyor. Eğer başka bir konuda yardım gerekirse, lütfen bana bildirin!"
+  },
+  {
+    "role": "user",
+    "content": "Şu anda ekranda ne var?"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekranda çeşitli uygulamaların açık olduğu bir masaüstü görülüyor. Soldaki pencere Telegram uygulamasına ait ve gelen mesajlar listelenmiş. Aynı zamanda, \"112 GÜNGÖREN SERVİSİ\" adlı bir sohbet açık ve mesajlar görünüyor. Sağda ise bir asistan uygulaması ses işleyerek sorulan sorulara yanıtlar veriyor. Ayrıca ekranın altında çeşitli uygulama simgelerinin bulunduğu bir dock mevcut.\n\nEkranın sağ üst köşesinde tarih ve saat (26 Haziran Çar, 20:05) ile batarya durumu, Wi-Fi bağlantı durumu ve diğer sistem ikonları bulunuyor."
+  },
+  {
+    "role": "user",
+    "content": "Merhaba, bu ekrandaki ikinci soruyu çözer misin lütfen?"
+  },
+  {
+    "role": "assistant",
+    "content": "Tabii, ekran görüntüsünde görünen ikinci soru şu şekildedir:\n\n---\n\n2. Tekrarlayan enfeksiyonlara sekonder gelişen kronik hastalık nedeniyle ölen 3 yaşındaki çocuğa otopsi yapılıyor. Otopsi'de pankreas ve tükürük bezindeki duktuslarda dilatasyon, duktal epitel hücrelerinde skuamöz metaplazi ve fibrozis saptanıyor. Karaciğerde şiddetli steatoz ve biliyer siroz görülüyor.\n\nBu hasta için en olası patolojik tanı aşağıdakilerden hangisidir? (Nisan 2017 Orijinali)\nA) Hemokromatoz\nB) Kistik fibrozis\nC) Glikojen depo hastalığı\nD) Wilson hastalığı\nE) Tirozinemi\n\n---\n\nDoğru cevap: B) Kistik fibrozis\n\n---\n\nBu hastalığa ilişkin belirtiler, kistik fibrozisle uyumludur. Bu hastalık, özellikle mukus salgılayan bezlerdeki tıkanıklıklar, sık enfeksiyonlar ve pankreas enzimi eksikliği ile karakterizedir."
+  },
+  {
+    "role": "user",
+    "content": "Peki, kestik fibrozisi ile ilgili bilmem gereken şeyleri anlatır mısın bana?"
+  },
+  {
+    "role": "assistant",
+    "content": "Tabii, kistik fibrozis hakkında bilmen gereken temel şeyler şunlar:\n\n1. **Genetik Bir Hastalık**: Kistik fibrozis, CFTR genindeki mutasyonlardan kaynaklanır ve otozomal resesif olarak kalıtılır. Yani, ebeveynlerden ikisi de taşıyıcı olduğunda çocukta hastalık ortaya çıkar.\n\n2. **Mukus Üretimi**: Bu hastalık, vücutta kalın ve yapışkan mukus üretimine neden olur. Akciğerler, pankreas ve sindirim sistemi gibi bölgelerde bu mukus birikerek tıkanıklıklara ve enfeksiyonlara yol açar.\n\n3. **Belirtiler ve Komplikasyonlar**: Tezahürleri arasında tekrarlayan akciğer enfeksiyonları, kronik öksürük, sindirim problemleri, iştahsızlık ve kilo kaybı bulunur. Pankreasın etkilenmesi nedeniyle sindirim enzimleri düzgün salgılanamayabilir, bu da sindirim sorunlarına neden olur.\n\n4. **Tedavi ve Yönetim**: Kistik fibrozisin kesin bir tedavisi yoktur, ancak semptomlar yönetilebilir. Tedaviler genellikle solunum yollarını açan ilaçlar, antibiyotikler, pankreatik enzim takviyeleri ve fizyoterapiyi içerir.\n\nSormak istediğin başka bir şey var mı?"
+  },
+  {
+    "role": "user",
+    "content": "Milli maçı saat kaçta?"
+  },
+  {
+    "role": "user",
+    "content": "İdli maç kaçta?"
+  },
+  {
+    "role": "user",
+    "content": "MBC 뉴스 이덕영입니다."
+  },
+  {
+    "role": "assistant",
+    "content": "Üzgünüm, ama benim bir AI asistan olduğumu ve canlı TV programlarını veya kesin saatleri takip etme yeteneğim olmadığını unutmayın. Maçların saatini kontrol etmek için doğrudan ilgili televizyon kanalının veya spor uygulamalarının programlarını kontrol etmeni öneririm."
+  },
+  {
+    "role": "user",
+    "content": "Türkiye maçı hangi kanalda webde ara?"
+  },
+  {
+    "role": "assistant",
+    "content": "Web araması sırasında bir hata oluştu: expected string or bytes-like object, got 'NoneType'"
+  },
+  {
+    "role": "user",
+    "content": "Ekranda ne var şu anda?"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekranda bir bilgisayar masaüstü görünüyor. Sol üst köşede Python ikonu bulunan bir pencere açık ve üzerinde bir AI asistan uygulaması çalışıyor gibi görünüyor. Ayrıca masaüstünde görkemli bir doğa manzarası var; yeşil tepeler, ağaçlar ve bulutlarla kaplı dağlar görülüyor. Ekranın altında bir dizi uygulama ikonu bulunan bir dock var ve ekranın sağ üst köşesinde saat ve sistem ikonları yer alıyor. Dock'taki ikonlar, çeşitli yaygın uygulamaları temsil ediyor gibi görünüyor, örneğin bir web tarayıcısı, bir mesajlaşma uygulaması, bir ofis uygulaması ve daha fazlası."
+  },
+  {
+    "role": "user",
+    "content": "Türkiye maçı hangi kanalda webti ara"
+  },
+  {
+    "role": "assistant",
+    "content": "Web araması sırasında bir hata oluştu: expected string or bytes-like object, got 'NoneType'"
+  },
+  {
+    "role": "user",
+    "content": "Türkiye'nin maçı hangi kanalda? Web'de ara."
+  },
+  {
+    "role": "assistant",
+    "content": "Bugün oynanacak olan Türkiye - Çekya maçı hakkında en güncel bilgiye göre, maç saat 22:00'de başlayacak ve TRT 1 kanalından canlı olarak yayınlanacak. \n\nDetaylı bilgi için şu haber bağlantısını ziyaret edebilirsiniz: [Çekya Türkiye maçı CANLI izle! (EURO 2024) Çekya Türkiye EURO ...](https://www.haberler.com/haberler/cekya-turkiye-maci-canli-izle-euro-2024-cekya-17462074-haberi/).\n\nUmarım bu bilgi yardımcı olur!"
+  },
+  {
+    "role": "user",
+    "content": "Bu kadar ve bir taraftan"
+  },
+  {
+    "role": "assistant",
+    "content": "Üzgünüm, web'de arama yapamam. Ama genelde TRT Spor, beIN Sports gibi spor kanallarında yayınlanıyor. En güncel bilgi için bir spor haberleri sitesine göz atabilirsin."
+  },
+  {
+    "role": "user",
+    "content": "Bitcoin'in fiyatına kadar webde ara."
+  },
+  {
+    "role": "assistant",
+    "content": "Şu an Bitcoin'in fiyatını öğrenmek için aşağıdaki kaynaklardan birini ziyaret edebilirsiniz:\n\n1. [CoinMarketCap Bitcoin Sayfası](https://coinmarketcap.com/tr/currencies/bitcoin/)\n   - Bitcoin bugünkü fiyatı ₺2014146.76 TRY olarak belirtilmiştir. Bu sayfa ayrıca 24 saatlik işlem hacmi ve diğer önemli verileri de sunmaktadır.\n   \n2. [Investing.com Bitcoin Sayfası](https://tr.investing.com/crypto/bitcoin/)\n   - Bitcoin fiyat ve tüm kripto paralarla ilgili güncel bilgileri buradan takip edebilirsiniz. Ayrıca teknik analiz ve haberler gibi ek bilgilere de ulaşabilirsiniz.\n\n3. [TradingView Bitcoin Grafiği](https://tr.tradingview.com/symbols/BTCUSD/)\n   - Canlı Bitcoin Dolar grafiğini izleyebilir ve BTCUSD fiyatlarını gerçek zamanlı olarak takip edebilirsiniz. Bitcoin teknik analizleri ve geçmiş fiyat bilgileri de bu platformda mevcut.\n\n4. [CoinGecko Bitcoin Sayfası](https://www.coingecko.com/tr/coins/bitcoin)\n   - Bitcoin kripto fiyatı, grafiği, piyasa değeri, 24 saatlik işlem hacmi ve diğer önemli verilere buradan ulaşabilirsiniz.\n\nBu kaynaklardan herhangi birini ziyaret ederek güncel Bitcoin fiyatını ve ilgili diğer detayları öğrenebilirsiniz."
+  },
+  {
+    "role": "user",
+    "content": "Ekranımda gördüğün Aslıhan'la olan konuşmama, Aslıhan'a bir cevap oluştur. Sempatik emojilerle süslenmiş bir cevap olsun lütfen."
+  },
+  {
+    "role": "assistant",
+    "content": "Tabii, işte Aslıhan'a gönderebileceğin tatlı ve sempatik emojilerle süslenmiş bir cevap:\n\n\"Rica ederim Aslıhan🌸 Şimdi ne zaman buluşuyoruz? 😄☕️\""
+  },
+  {
+    "role": "user",
+    "content": "Sadık Barış'a da güzel. Kimdir? Webde ara."
+  },
+  {
+    "role": "assistant",
+    "content": "Arama sonuçlarında \"Sadık Barış'a da güzel\" ile ilgili doğrudan bir bilgiye ulaşamadım. Bu ifade, belirli bir kişi, eser ya da olay hakkında doğrudan bir bilgi sunmuyor gibi görünüyor. Yine de, belirttiğiniz konu hakkında daha fazla detay veya özel bir bağlam sağlarsanız, yardımcı olabilirim.\n\nSormak istediğiniz kişinin kim olduğunu ya da konunun ne olduğunu netleştirirseniz, daha belirgin ve yardımcı bilgiler sunabilirim. Örneğin, Sadık Barış bir edebi eser mi, bir şarkı mı yoksa bir kişi mi? Bu tür ayrıntılar, size daha doğru bir yanıt vermeme yardımcı olacaktır."
+  }
+]
