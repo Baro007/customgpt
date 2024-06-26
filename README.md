@@ -1,87 +1,98 @@
+# AI Assistant: Your Personal GPT-4 Powered Companion
+
+![AI Assistant Logo]()
+
+Welcome to AI Assistant, a cutting-edge application that brings the power of GPT-4 to your fingertips. This intelligent assistant can understand speech, analyze images, and engage in natural conversations, all while providing responses in a lifelike voice.
+
+## 🌟 Features
+
+- **Multi-Modal Interaction**: Communicate via text, voice, or even screen captures!
+- **Voice-Powered**: Utilizes OpenAI's Whisper for accurate speech-to-text conversion.
+- **Lifelike Responses**: ElevenLabs API transforms text responses into natural-sounding speech.
+- **Visual Understanding**: Analyze screenshots and images with GPT-4's advanced vision capabilities.
+- **Web Search Integration**: Get up-to-date information on any topic.
+- **I
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.8 or newer
+
+### Installation and Setup
+
+1. Clone or download this repository to your computer.
+2. Open Terminal and navigate to the downloaded folder.
+3. Run the following command:
+
+   
+   chmod +x setup.sh && ./setup.sh
+
+The application will start automatically once the installation is complete.
+
+Note: This application requires Python 3.8 or a newer version.
+Alternative Manual Setup
+If you prefer to set up the environment manually:
+
+Clone this repository:
+bash
+Copygit clone https://github.com/Baro007/customgpt
+cd ai-assistant
+
+Set up a virtual environment (recommended):
+bashCopypython3 -m venv myenv
+source myenv/bin/activate  # On Windows, use `myenv\Scripts\activate`
+
+Install the required packages:
+bashCopypip install openai elevenlabs httpx sounddevice soundfile numpy pillow python-dotenv PyQt5 qasync
+
+Create a .env file in the project root and add your API keys:
+CopyOPENAI_API_KEY=your_openai_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+VOICE_ID=your_elevenlabs_voice_id
+SERPER_API_KEY=your_serper_api_key
+
+Run the application:
+bashCopypython customgpt.py
 
 
-### Önemli Özellikler:
+🖥 Usage
 
-- **Çoklu Giriş Modları:** Kullanıcılar GPT-4 ile metin yazarak, konuşarak veya ekran görüntüsü paylaşarak etkileşim kurabilirler.
-- **Sesli Konuşma:** ElevenLabs API'si kullanılarak, GPT-4'ün yanıtları gerçekçi bir şekilde seslendirilir ve kullanıcıya dinletilir.
-- **Whisper Entegrasyonu:** Konuşmadan metne dönüştürme işlemi için OpenAI'nin Whisper modeli kullanılır.
-- **Ekran Görüntüsü Analizi:** Kullanıcılar ekran görüntülerini paylaşabilir ve GPT-4'ten içerik hakkında bilgi isteyebilirler.
-- **Kolay Kullanım:** Basit bir komut satırı arayüzü ile kullanıcı dostu bir deneyim sunar.
+Click the "Speak" button to start recording your voice input.
+Click "Stop" when you're done speaking.
+Wait for the AI to process your input and listen to its response.
+For text input or screenshot analysis, use the appropriate buttons in the UI.
 
-## Gereksinimler
+🛠 Key Components
 
-- Python 3.7+
-- Gerekli Python Paketleri: Aşağıdaki komutla gerekli paketler yüklenebilir:
-    ```bash
-    pip install -r requirements.txt
-    ```
-- API Anahtarları:
-  - **OpenAI API Anahtarı:** GPT-4 modeline erişmek için gereklidir.
-  - **ElevenLabs API Anahtarı:** Metinden konuşmaya dönüştürme için gereklidir (isteğe bağlı).
+AudioRecorder: Handles voice input recording.
+AIAssistant: Main class that orchestrates all functionalities.
+text_to_speech: Converts text responses to speech using ElevenLabs API.
+perform_web_search: Integrates web search capabilities.
+analyze_screenshot: Processes and analyzes screen captures.
 
-## Kurulum
+🧠 How It Works
 
-1. Projeyi klonlayın veya zip dosyasını indirin ve dosyaları çıkartın.
-2. `requirements.txt` dosyasındaki paketleri yükleyin.
-3. `.env` dosyasını oluşturun ve API anahtarlarınızı aşağıdaki gibi ekleyin:
-    ```plaintext
-    OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
-    ELEVENLABS_API_KEY="YOUR_ELEVENLABS_API_KEY"
-    VOICE_ID="CHOOSEN_VOICE_ID"
-    ```
+User input (voice/text/image) is captured and processed.
+The input is sent to GPT-4 for analysis and response generation.
+If needed, web searches or image analysis are performed.
+The AI's response is converted to speech and played back to the user.
 
-## Kullanım
+📈 Future Enhancements
 
-1. Bir terminal penceresi açın ve proje dizinine gidin.
-2. Uygulamayı başlatmak için aşağıdaki komutu çalıştırın:
-   bash
-    python customgpt.py
-    ```
+Implement conversation memory for more contextual interactions.
+Add support for multiple languages.
+Integrate more AI models for specialized tasks.
+Develop a mobile application version.
 
-## Uygulama Arayüzü
+🤝 Contributing
+We welcome contributions! Please feel free to submit a Pull Request.
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+🙏 Acknowledgements
 
-Uygulama başlatıldığında, kullanıcılara aşağıdaki giriş seçenekleri sunulur:
-- **Yazı (1):** Metin girişi yapmak için bu seçeneği kullanın.
-- **Konuşma (2):** Mikrofonunuzla konuşarak GPT-4 ile etkileşim kurmak için bu seçeneği kullanın.
-- **Ekran Görüntüsü (3):** Ekran görüntüsü alıp GPT-4'ten analiz etmesini istemek için bu seçeneği kullanın.
+OpenAI for GPT-4 and Whisper
+ElevenLabs for their realistic text-to-speech API
+The PyQt5 team for the excellent GUI framework
 
-## Fonksiyon Açıklamaları
 
-- **get_user_choice():** Kullanıcının hangi giriş modunu kullanmak istediğini sorar (yazı, konuşma, ekran görüntüsü).
-- **get_user_input():** Mikrofondan ses kaydı yapar ve Whisper modelini kullanarak metne dönüştürür.
-- **text_to_speech_input_streaming():** ElevenLabs API'sini kullanarak metni sese dönüştürür ve yayınlar.
-- **handle_speech_input():** Kullanıcıdan ses girişi alır, GPT-4 ile etkileşime geçer ve yanıtı seslendirir.
-- **chat_completion():** Verilen metin girişi ve geçmiş mesajları kullanarak OpenAI GPT-4 API'sine istek gönderir ve yanıtı alır.
-- **capture_screen():** Ekran görüntüsü alır ve base64 formatına dönüştürür.
-- **text_chunker():** Uzun metinleri, cümleleri bölmeden daha küçük parçalara ayırır.
-- **stream():** Ses verilerini mpv oynatıcı kullanarak yayınlar.
-- **handle_text_input():** Kullanıcıdan metin girişi alır ve GPT-4 ile etkileşime geçer.
-- **handle_screenshot_input():** Ekran görüntüsü alır, kullanıcıdan girdi ister ve GPT-4'ten analiz etmesini ister.
-- **main():** Ana uygulama döngüsünü yönetir.
-
-## Örnek Kullanım Senaryoları
-
-- **Yaratıcı Yazma:** Hikaye fikirleri üretmek, şiir yazmak veya senaryo tasarlamak için GPT-4'ün yaratıcılığından yararlanın.
-- **Kodlama Yardımcısı:** Kodlama sırasında takıldığınız noktalarda GPT-4'ten yardım alın, kod örnekleri isteyin veya hatalarınızı düzeltin.
-- **Dil Öğrenme:** GPT-4 ile farklı dillerde konuşma pratiği yapın, gramer kurallarını öğrenin veya metin çevirileri yapın.
-- **Oyun Geliştirme:** Oyunlar için diyaloglar, karakterler veya hikaye unsurları oluşturmak için GPT-4'ü kullanın.
-- **Eğlence:** GPT-4 ile sohbet edin, şakalar yapın veya ilginç bilgiler edinin.
-
-## Sınırlamalar
-
-- **API Sınırlamaları:** Hem OpenAI hem de ElevenLabs API'lerinin kullanım sınırlamaları vardır.
-- **Gerçek Zamanlı Performans:** Konuşma tanıma ve metinden konuşmaya dönüştürme işlemleri gerçek zamanlı olarak gerçekleşse de, internet bağlantınızın hızı ve API yanıt süreleri performansı etkileyebilir.
-- **Doğruluk:** Whisper modeli ve GPT-4, etkileyici bir doğruluk sunsa da, her zaman mükemmel sonuçlar vermeyebilir.
-
-## Gelecek Geliştirmeler
-
-- **Bellek Yönetimi:** Önceki konuşmaları kaydetme ve GPT-4'ün daha tutarlı ve bağlamsal olarak alakalı yanıtlar vermesini sağlama.
-- **Grafik Kullanıcı Arayüzü (GUI):** Daha kullanıcı dostu bir deneyim için grafik arayüz geliştirme.
-
-## Katkıda Bulunma
-
-Projeye katkıda bulunmak isterseniz, lütfen fork edin, değişikliklerinizi yapın ve bir pull request gönderin. Her türlü katkıya açığız!
-
-     pip uninstall PyQt5-sip PyQt5-Qt5 PyQtWebEngine
-
-     pip install PyQt5
+Created with ❤️ by Mektep.ai
