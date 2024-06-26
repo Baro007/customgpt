@@ -1,33 +1,27 @@
 import sys
 import asyncio
-import openai
-import elevenlabs
-import logging
-import os
 import httpx
 import sounddevice as sd
 import soundfile as sf
 import numpy as np
-import time
 import io
-import base64
 import json
-import http.client
-from io import BytesIO
-from elevenlabs import VoiceSettings
-from elevenlabs.client import ElevenLabs
-from PIL import ImageGrab
+import logging
+import re
+import base64
+import time
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea, QLineEdit
+from PyQt5.QtCore import QThread, pyqtSignal
 from dotenv import load_dotenv
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-import qasync
+import os
+import qasync  # Eksik olan içe aktarma
+from PIL import ImageGrab
 
 # API anahtarlarını ve diğer konfigürasyonları yükle
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 VOICE_ID = os.getenv("VOICE_ID")
-SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 
 # Logging ayarları
 logging.basicConfig(
@@ -46,9 +40,6 @@ conversation_history = []
 
 # Konuşma geçmişini kaydetmek için dosya yolu
 conversation_history_file = "conversation_history.json"
-
-# ElevenLabs client'ı başlatın
-client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
 
 class AudioRecorder(QThread):
     finished = pyqtSignal(object)
@@ -78,12 +69,7 @@ class AIAssistant(QMainWindow):
         self.recorder = AudioRecorder()
         self.recorder.finished.connect(self.on_recording_finished)
         self.load_conversation_history()
-        
-            # API anahtarlarını kontrol et
-    print(f"OpenAI API Key: {OPENAI_API_KEY[:5]}...{OPENAI_API_KEY[-5:]}")
-    print(f"ElevenLabs API Key: {ELEVENLABS_API_KEY[:5]}...{ELEVENLABS_API_KEY[-5:]}")
-    print(f"Serper API Key: {SERPER_API_KEY[:5]}...{SERPER_API_KEY[-5:]}")
-
+    
     def initUI(self):
         self.setWindowTitle('AI Asistan')
         self.setGeometry(100, 100, 400, 500)
@@ -102,6 +88,14 @@ class AIAssistant(QMainWindow):
         self.stop_button.setEnabled(False)
         layout.addWidget(self.stop_button)
 
+        self.text_input = QLineEdit(self)
+        self.text_input.setPlaceholderText("Metin girin ve 'Gönder' butonuna tıklayın")
+        layout.addWidget(self.text_input)
+
+        self.send_button = QPushButton('Gönder', self)
+        self.send_button.clicked.connect(self.send_text_input)
+        layout.addWidget(self.send_button)
+
         self.status_label = QLabel('Hazır', self)
         layout.addWidget(self.status_label)
 
@@ -113,6 +107,43 @@ class AIAssistant(QMainWindow):
         layout.addWidget(scroll_area)
 
         central_widget.setLayout(layout)
+
+    def send_text_input(self):
+        user_input = self.text_input.text().strip()
+        if user_input:
+            conversation_history.append({"role": "user", "content": user_input})
+            self.text_input.clear()
+            self.update_response_area()
+            asyncio.create_task(self.process_text_input(user_input))
+
+    async def process_text_input(self, user_input):
+        conversation_history.append({"role": "user", "content": user_input})
+        self.update_response_area()
+
+        try:
+            self.status_label.setText("Yanıt alınıyor...")
+            # OpenAI'den yanıt al
+            response_text = await self.get_gpt4_response(user_input)
+            conversation_history.append({"role": "assistant", "content": response_text})
+            self.update_response_area()
+            self.save_conversation_history()
+
+            await self.print_gpt4_response(response_text)
+
+            # Metni parçalara böl ve TTS işlemi yap
+            audio_array, samplerate = await self.text_to_speech_chunked(response_text)
+
+            # Ses çalma
+            await self.play_audio(audio_array, samplerate)
+            
+            self.status_label.setText("Hazır")
+        except Exception as e:
+            error_message = f"Hata: {str(e)}"
+            self.status_label.setText(error_message)
+            self.response_area.append(error_message + "\n\n")
+        finally:
+            self.speak_button.setEnabled(True)
+            self.stop_button.setEnabled(False)
 
     def start_recording(self):
         global recording
@@ -191,9 +222,8 @@ class AIAssistant(QMainWindow):
 
             await self.print_gpt4_response(response_text)
 
-            audio_array, samplerate = await self.text_to_speech(response_text)
-            sd.play(audio_array, samplerate=samplerate)
-            sd.wait()
+            audio_array, samplerate = await self.text_to_speech_chunked(response_text)
+            await self.play_audio(audio_array, samplerate)
 
             self.status_label.setText("Hazır")
         except Exception as e:
@@ -354,10 +384,6 @@ class AIAssistant(QMainWindow):
             print(f"Error in perform_web_search: {str(e)}")
             return f"Web araması sırasında bir hata oluştu: {str(e)}"
 
-
-    
-
-
     async def process_search_results_with_gpt4(self, query, search_results):
         print("Processing search results with GPT-4")
         if not search_results:
@@ -367,8 +393,7 @@ class AIAssistant(QMainWindow):
         Kullanıcının sorgusu: {query}
         Web araması sonuçları: {json.dumps(search_results, ensure_ascii=False)}
 
-        Kullanıcıya en alakalı ve bilgilendirici yanıtı sağlamak için bu arama sonuçlarını kullanın. 
-       
+        Kullanıcıya en alakalı ve bilgilendirici yanıtı sağlamak için bu arama sonuçlarını kullanın.
         """
 
         try:
@@ -422,6 +447,47 @@ class AIAssistant(QMainWindow):
 
         return audio_array, samplerate
 
+    async def text_to_speech_chunked(self, text, max_chunk_size=100):
+        # Metni parçalara böl
+        parts = self.split_text(text, max_chunk_size=max_chunk_size)
+        
+        # Her bir parça için TTS işlemi
+        audio_parts = []
+        samplerate = None
+        for part in parts:
+            audio_array, samplerate = await self.text_to_speech(part)
+            audio_parts.append(audio_array)
+        
+        # Ses parçalarını birleştir
+        combined_audio = np.concatenate(audio_parts)
+        
+        return combined_audio, samplerate
+
+    async def play_audio(self, audio_array, samplerate):
+        sd.play(audio_array, samplerate=samplerate)
+        sd.wait()
+
+    def split_text(self, text, max_chunk_size=100):
+        # Metni cümle sonlandırıcılarına göre ayır
+        sentences = re.split(r'(?<=[.!?]) +', text)
+        chunks = []
+        current_chunk = ""
+
+        for sentence in sentences:
+            if len(current_chunk) + len(sentence) + 1 <= max_chunk_size:
+                if current_chunk:
+                    current_chunk += " "
+                current_chunk += sentence
+            else:
+                if current_chunk:
+                    chunks.append(current_chunk)
+                current_chunk = sentence
+
+        if current_chunk:
+            chunks.append(current_chunk)
+
+        return chunks
+
     def closeEvent(self, event):
         self.save_conversation_history()
         event.accept()
@@ -443,7 +509,6 @@ async def main():
 
     with loop:
         await loop.run_forever()
-
 
 if __name__ == '__main__':
     asyncio.run(main())

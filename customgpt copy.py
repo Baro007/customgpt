@@ -18,7 +18,7 @@ from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 from PIL import ImageGrab
 from dotenv import load_dotenv
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea, QLineEdit
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 import qasync
 
@@ -79,11 +79,11 @@ class AIAssistant(QMainWindow):
         self.recorder.finished.connect(self.on_recording_finished)
         self.load_conversation_history()
         
-            # API anahtarlarını kontrol et
+    # API anahtarlarını kontrol et
     print(f"OpenAI API Key: {OPENAI_API_KEY[:5]}...{OPENAI_API_KEY[-5:]}")
     print(f"ElevenLabs API Key: {ELEVENLABS_API_KEY[:5]}...{ELEVENLABS_API_KEY[-5:]}")
     print(f"Serper API Key: {SERPER_API_KEY[:5]}...{SERPER_API_KEY[-5:]}")
-
+    
     def initUI(self):
         self.setWindowTitle('AI Asistan')
         self.setGeometry(100, 100, 400, 500)
@@ -102,6 +102,14 @@ class AIAssistant(QMainWindow):
         self.stop_button.setEnabled(False)
         layout.addWidget(self.stop_button)
 
+        self.text_input = QLineEdit(self)
+        self.text_input.setPlaceholderText("Metin girin ve 'Gönder' butonuna tıklayın")
+        layout.addWidget(self.text_input)
+
+        self.send_button = QPushButton('Gönder', self)
+        self.send_button.clicked.connect(self.send_text_input)
+        layout.addWidget(self.send_button)
+
         self.status_label = QLabel('Hazır', self)
         layout.addWidget(self.status_label)
 
@@ -113,6 +121,49 @@ class AIAssistant(QMainWindow):
         layout.addWidget(scroll_area)
 
         central_widget.setLayout(layout)
+
+    def send_text_input(self):
+        user_input = self.text_input.text().strip()
+        if user_input:
+            conversation_history.append({"role": "user", "content": user_input})
+            self.text_input.clear()
+            self.update_response_area()
+            asyncio.create_task(self.process_text_input(user_input))
+
+    async def process_text_input(self, user_input):
+        try:
+            self.status_label.setText("Yanıt alınıyor...")
+            action = await self.decide_action(user_input)
+            if action == "1":
+                screenshot = self.capture_screen()
+                image_base64 = self.image_to_base64(screenshot)
+                response_text = await self.analyze_screenshot(user_input, image_base64)
+            elif action == "2":
+                response_text = await self.perform_web_search(user_input)
+            else:
+                response_text = await self.get_gpt4_response(user_input)
+
+            if response_text is None:
+                response_text = "Üzgünüm, bir cevap üretilemedi."
+
+            conversation_history.append({"role": "assistant", "content": response_text})
+            self.update_response_area()
+            self.save_conversation_history()
+
+            await self.print_gpt4_response(response_text)
+
+            audio_array, samplerate = await self.text_to_speech(response_text)
+            sd.play(audio_array, samplerate=samplerate)
+            sd.wait()
+
+            self.status_label.setText("Hazır")
+        except Exception as e:
+            error_message = f"Hata: {str(e)}"
+            self.status_label.setText(error_message)
+            self.response_area.append(error_message + "\n\n")
+        finally:
+            self.speak_button.setEnabled(True)
+            self.stop_button.setEnabled(False)
 
     def start_recording(self):
         global recording
@@ -244,7 +295,7 @@ class AIAssistant(QMainWindow):
                 "Content-Type": "application/json",
             }
             data = {
-                "model": "gpt-4o",
+                "model": "gpt-4",
                 "messages": messages,
             }
             response = await client.post(
@@ -271,7 +322,7 @@ class AIAssistant(QMainWindow):
             "Content-Type": "application/json",
         }
         data = {
-            "model": "gpt-4o",
+            "model": "gpt-4",
             "messages": [
                 {"role": "user", "content": [
                     {"type": "text", "text": query},
@@ -304,7 +355,7 @@ class AIAssistant(QMainWindow):
                 "Content-Type": "application/json",
             }
             data = {
-                "model": "gpt-4o",
+                "model": "gpt-4",
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.0,
             }
@@ -354,10 +405,6 @@ class AIAssistant(QMainWindow):
             print(f"Error in perform_web_search: {str(e)}")
             return f"Web araması sırasında bir hata oluştu: {str(e)}"
 
-
-    
-
-
     async def process_search_results_with_gpt4(self, query, search_results):
         print("Processing search results with GPT-4")
         if not search_results:
@@ -367,8 +414,7 @@ class AIAssistant(QMainWindow):
         Kullanıcının sorgusu: {query}
         Web araması sonuçları: {json.dumps(search_results, ensure_ascii=False)}
 
-        Kullanıcıya en alakalı ve bilgilendirici yanıtı sağlamak için bu arama sonuçlarını kullanın. 
-       
+        Kullanıcıya en alakalı ve bilgilendirici yanıtı sağlamak için bu arama sonuçlarını kullanın.
         """
 
         try:
@@ -378,7 +424,7 @@ class AIAssistant(QMainWindow):
                     "Content-Type": "application/json",
                 }
                 data = {
-                    "model": "gpt-4o",
+                    "model": "gpt-4",
                     "messages": [{"role": "user", "content": prompt}],
                 }
                 response = await client.post(
@@ -443,7 +489,6 @@ async def main():
 
     with loop:
         await loop.run_forever()
-
 
 if __name__ == '__main__':
     asyncio.run(main())

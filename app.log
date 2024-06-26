@@ -626,3 +626,970 @@
 2024-06-26 22:38:22,017 - DEBUG - response_closed.complete
 2024-06-26 22:38:22,019 - DEBUG - close.started
 2024-06-26 22:38:22,019 - DEBUG - close.complete
+2024-06-26 23:45:49,064 - DEBUG - Closing
+2024-06-26 23:46:44,108 - DEBUG - Closing
+2024-06-26 23:47:03,075 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:47:03,076 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:47:03,091 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-26 23:47:03,091 - DEBUG - Submitting callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:47:03,091 - DEBUG - #1 got callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:47:03,092 - DEBUG - Invoking callback
+2024-06-26 23:47:03,134 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-26 23:47:03,187 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x109bdc800>
+2024-06-26 23:47:03,188 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10a4775d0> server_hostname='api.openai.com' timeout=5.0
+2024-06-26 23:47:03,253 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x109cef470>
+2024-06-26 23:47:03,254 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:03,254 - DEBUG - send_request_headers.complete
+2024-06-26 23:47:03,254 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:47:03,255 - DEBUG - send_request_body.complete
+2024-06-26 23:47:03,255 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:04,330 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 20:47:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'593'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'80000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'79815'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'138ms'), (b'x-request-id', b'e5cf98c989597cffbf2579c7d13f734c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=hZOcSqPLR0Ah7i2nhpG7OIxTNSg2A3N1NZ8pZ_ssw0c-1719434824-1.0.1.1-7m71eLFR4nGnZEp99VyuDQi2H2k.kCau0aRSBgHATlm5Vw3Hlv_BTJswWumrOvQib.StlJojsYI2dO7xp9oGgw; path=/; expires=Wed, 26-Jun-24 21:17:04 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=wuaJZjfdXCTF17Ee6F4Hl2B2naGitRu1v75ipF2xXzY-1719434824274-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a00cde1b4a68b3-BUD'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-26 23:47:04,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-26 23:47:04,334 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:47:04,335 - DEBUG - receive_response_body.complete
+2024-06-26 23:47:04,335 - DEBUG - response_closed.started
+2024-06-26 23:47:04,335 - DEBUG - response_closed.complete
+2024-06-26 23:47:04,336 - DEBUG - close.started
+2024-06-26 23:47:04,336 - DEBUG - close.complete
+2024-06-26 23:47:04,337 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:47:04,337 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:47:04,351 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-26 23:47:04,351 - DEBUG - Submitting callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:47:04,352 - DEBUG - #3 got callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:47:04,352 - DEBUG - Invoking callback
+2024-06-26 23:47:04,353 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-26 23:47:04,409 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10f3bb5c0>
+2024-06-26 23:47:04,409 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10f3be750> server_hostname='api.openai.com' timeout=None
+2024-06-26 23:47:04,471 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10f3bb530>
+2024-06-26 23:47:04,472 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:04,472 - DEBUG - send_request_headers.complete
+2024-06-26 23:47:04,472 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:47:04,472 - DEBUG - send_request_body.complete
+2024-06-26 23:47:04,472 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:04,755 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Date', b'Wed, 26 Jun 2024 20:47:04 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'306'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'226ae1ce8f2483edf2ff2f3b6484b9d1'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=wKQFuT7XlN9ujVrsEpt4lHlDfWUchpb8E.TXz25gLrY-1719434824-1.0.1.1-PBcMOJZV160Jb2t9JzBAUNnDEK2GQA9qYyV2U3UCGRev3vF2qD7q1kFLZr4rK19b8KUIbnuSUE1iPW0f1tV.JA; path=/; expires=Wed, 26-Jun-24 21:17:04 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=73YukEwUvd1RtB.supiFTfBN9oby6a6jLTPpnhmQMOY-1719434824820-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a00ce6198dc30a-VIE'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-26 23:47:04,756 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-06-26 23:47:04,756 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:47:04,756 - DEBUG - receive_response_body.complete
+2024-06-26 23:47:04,757 - DEBUG - response_closed.started
+2024-06-26 23:47:04,757 - DEBUG - response_closed.complete
+2024-06-26 23:47:04,757 - DEBUG - close.started
+2024-06-26 23:47:04,758 - DEBUG - close.complete
+2024-06-26 23:47:48,847 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:47:48,849 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:47:48,865 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-26 23:47:48,866 - DEBUG - Submitting callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:47:48,866 - DEBUG - #4 got callback <function getaddrinfo at 0x100ec7600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:47:48,866 - DEBUG - Invoking callback
+2024-06-26 23:47:48,900 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-26 23:47:48,935 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1033f5730>
+2024-06-26 23:47:48,936 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10f3bf050> server_hostname='api.openai.com' timeout=5.0
+2024-06-26 23:47:48,975 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x109c79cd0>
+2024-06-26 23:47:48,975 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:48,976 - DEBUG - send_request_headers.complete
+2024-06-26 23:47:48,976 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:47:48,976 - DEBUG - send_request_body.complete
+2024-06-26 23:47:48,976 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:47:49,209 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Date', b'Wed, 26 Jun 2024 20:47:49 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'306'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'edadefed2039da4a5099bca06ea97dea'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=dtTE09zesRVczbPes_rh54Vu3ZfTU_fFJUuOctIRfVg-1719434869-1.0.1.1-YcZTCzoYWVmKC2gBrbjCjyvcoIh3ii9ZuMVL0.zegyMKHYkvFODDGrkTSROhPt05Bu9ld2sH402OCtFQyvKPSg; path=/; expires=Wed, 26-Jun-24 21:17:49 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=1HtOIdYzJkXT_g6R179_iB5lWHZ8kJTR.W74rbFW33k-1719434869288-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a00dfbca5268ab-IST'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-26 23:47:49,211 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-06-26 23:47:49,212 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:47:49,212 - DEBUG - receive_response_body.complete
+2024-06-26 23:47:49,212 - DEBUG - response_closed.started
+2024-06-26 23:47:49,212 - DEBUG - response_closed.complete
+2024-06-26 23:47:49,213 - DEBUG - close.started
+2024-06-26 23:47:49,214 - DEBUG - close.complete
+2024-06-26 23:47:51,103 - DEBUG - Shutting down
+2024-06-26 23:47:51,104 - DEBUG - Waiting for thread #1 to stop...
+2024-06-26 23:47:51,104 - DEBUG - Thread #5 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #2 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #7 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #6 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #8 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #9 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #10 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #1 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #3 stopped
+2024-06-26 23:47:51,104 - DEBUG - Thread #4 stopped
+2024-06-26 23:47:51,104 - DEBUG - Waiting for thread #2 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #3 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #4 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #5 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #6 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #7 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #8 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #9 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Waiting for thread #10 to stop...
+2024-06-26 23:47:51,105 - DEBUG - Closing
+2024-06-26 23:48:10,002 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:48:10,004 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:48:10,019 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-26 23:48:10,020 - DEBUG - Submitting callback <function getaddrinfo at 0x101273600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:48:10,020 - DEBUG - #1 got callback <function getaddrinfo at 0x101273600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:48:10,020 - DEBUG - Invoking callback
+2024-06-26 23:48:10,023 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-26 23:48:10,084 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x1032cee70>
+2024-06-26 23:48:10,084 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10c383650> server_hostname='api.openai.com' timeout=5.0
+2024-06-26 23:48:10,160 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10ba72720>
+2024-06-26 23:48:10,160 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:10,161 - DEBUG - send_request_headers.complete
+2024-06-26 23:48:10,161 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:48:10,161 - DEBUG - send_request_body.complete
+2024-06-26 23:48:10,161 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:11,303 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 20:48:11 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'585'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'80000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'79817'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'137ms'), (b'x-request-id', b'5b22a8e9b35a393f5352d0b1590882b7'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=zdIRo9avHmAnzlFXezK.gNoLSgCsSqubCYgUiJVtIio-1719434891-1.0.1.1-ngWbg8rg9o5RLdtTMEI8AhemvkdLMz6jrLDGLMqj1fBWVqqCA2mxnozgJTTZzgesP3FFQEajbCL_MuiVpWfveA; path=/; expires=Wed, 26-Jun-24 21:18:11 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=86D_21.mAv7exTS1.ZY6bNKWKYEtSyOIZo1z5CzbBoM-1719434891253-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a00e804e6268bc-BUD'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-26 23:48:11,306 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-26 23:48:11,306 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:48:11,307 - DEBUG - receive_response_body.complete
+2024-06-26 23:48:11,307 - DEBUG - response_closed.started
+2024-06-26 23:48:11,307 - DEBUG - response_closed.complete
+2024-06-26 23:48:11,308 - DEBUG - close.started
+2024-06-26 23:48:11,308 - DEBUG - close.complete
+2024-06-26 23:48:11,309 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:48:11,310 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:48:11,325 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-26 23:48:11,325 - DEBUG - Submitting callback <function getaddrinfo at 0x101273600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:48:11,326 - DEBUG - #4 got callback <function getaddrinfo at 0x101273600> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:48:11,326 - DEBUG - Invoking callback
+2024-06-26 23:48:11,328 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-26 23:48:11,356 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x104442630>
+2024-06-26 23:48:11,356 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x11a7928d0> server_hostname='api.openai.com' timeout=None
+2024-06-26 23:48:11,403 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x11a78f320>
+2024-06-26 23:48:11,404 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:11,404 - DEBUG - send_request_headers.complete
+2024-06-26 23:48:11,404 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:48:11,405 - DEBUG - send_request_body.complete
+2024-06-26 23:48:11,405 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:15,164 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 20:48:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'3215'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'80000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'79296'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'528ms'), (b'x-request-id', b'6de37d97e62510102b314993bd8b066c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=DxxZ41rcnshY5L8uY_IEUNIl1h.3xWtIYIXMa6nO71s-1719434895-1.0.1.1-gjbnwjJztVOFl5YY9EqR9DCVIc1PAVwToJGR.BijCYmnxLQP4iWfnXDURUxFI3tVtahlQgxNbJCSWwVAv5CDhw; path=/; expires=Wed, 26-Jun-24 21:18:15 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=oZhTgLONbuR7rf6HrJetmO8I1KE2BbTlxFnFtm4in.o-1719434895238-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a00e881d5f694e-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-26 23:48:15,164 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-26 23:48:15,164 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:48:15,165 - DEBUG - receive_response_body.complete
+2024-06-26 23:48:15,165 - DEBUG - response_closed.started
+2024-06-26 23:48:15,165 - DEBUG - response_closed.complete
+2024-06-26 23:48:15,165 - DEBUG - close.started
+2024-06-26 23:48:15,165 - DEBUG - close.complete
+2024-06-26 23:48:15,178 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-26 23:48:15,178 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-26 23:48:15,186 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-26 23:48:15,186 - DEBUG - Submitting callback <function getaddrinfo at 0x101273600> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-26 23:48:15,186 - DEBUG - #3 got callback <function getaddrinfo at 0x101273600> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-26 23:48:15,188 - DEBUG - Invoking callback
+2024-06-26 23:48:15,217 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-26 23:48:15,250 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10b9dc0e0>
+2024-06-26 23:48:15,250 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x11a7930d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-26 23:48:15,300 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10b9dcad0>
+2024-06-26 23:48:15,301 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:15,301 - DEBUG - send_request_headers.complete
+2024-06-26 23:48:15,301 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-26 23:48:15,301 - DEBUG - send_request_body.complete
+2024-06-26 23:48:15,301 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-26 23:48:17,494 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 20:48:15 GMT'), (b'server', b'uvicorn'), (b'request-id', b'VdSe82aHsye54MJX5Mp9'), (b'history-item-id', b'aKWVeCUeReMoZftPsgCp'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'141'), (b'tts-latency-ms', b'1952'), (b'Content-Length', b'133746'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-26 23:48:17,496 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-26 23:48:17,496 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-26 23:48:17,601 - DEBUG - receive_response_body.complete
+2024-06-26 23:48:17,601 - DEBUG - response_closed.started
+2024-06-26 23:48:17,601 - DEBUG - response_closed.complete
+2024-06-26 23:48:17,602 - DEBUG - close.started
+2024-06-26 23:48:17,602 - DEBUG - close.complete
+2024-06-27 01:00:42,955 - DEBUG - Shutting down
+2024-06-27 01:00:42,970 - DEBUG - Thread #10 stopped
+2024-06-27 01:00:42,974 - DEBUG - Thread #6 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #9 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #5 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #1 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #3 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #7 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #2 stopped
+2024-06-27 01:00:42,963 - DEBUG - Waiting for thread #1 to stop...
+2024-06-27 01:00:42,975 - DEBUG - Thread #8 stopped
+2024-06-27 01:00:42,975 - DEBUG - Thread #4 stopped
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #2 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #3 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #4 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #5 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #6 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #7 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #8 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #9 to stop...
+2024-06-27 01:00:42,977 - DEBUG - Waiting for thread #10 to stop...
+2024-06-27 01:00:42,979 - DEBUG - Closing
+2024-06-27 01:02:57,563 - DEBUG - Closing
+2024-06-27 01:06:26,044 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:06:26,062 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:06:26,090 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:06:26,092 - DEBUG - Submitting callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:06:26,092 - DEBUG - #1 got callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:06:26,093 - DEBUG - Invoking callback
+2024-06-27 01:06:26,205 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:06:26,273 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10e9ba0f0>
+2024-06-27 01:06:26,273 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10c803450> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:06:26,325 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10e9b9880>
+2024-06-27 01:06:26,325 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:26,325 - DEBUG - send_request_headers.complete
+2024-06-27 01:06:26,325 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:06:26,373 - DEBUG - send_request_body.complete
+2024-06-27 01:06:26,373 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:27,339 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:06:27 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'399'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'100'), (b'x-ratelimit-remaining-requests', b'99'), (b'x-ratelimit-reset-requests', b'600ms'), (b'x-request-id', b'daacb9b8d421a86bf38bf215992ebf5b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=SQYNC3S_IJJGLxtHa901NAZZfgLaWGrXSmpEZogy45Q-1719439587-1.0.1.1-zOnUhHRWvt2ctayRh12VA8kHhFAsq5RuJPUTAG00doHIg6WpRGp9HS3B_Ebn9J1Ies4s.9ndY1e0fsckZ43txg; path=/; expires=Wed, 26-Jun-24 22:36:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=nNaHH5sLo6j3uAQdqDbzv86QjrnB8WsM0Tvl8NEHRws-1719439587430-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a081275e3d0522-OTP'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:06:27,340 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-06-27 01:06:27,340 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:06:27,341 - DEBUG - receive_response_body.complete
+2024-06-27 01:06:27,341 - DEBUG - response_closed.started
+2024-06-27 01:06:27,341 - DEBUG - response_closed.complete
+2024-06-27 01:06:27,342 - DEBUG - close.started
+2024-06-27 01:06:27,342 - DEBUG - close.complete
+2024-06-27 01:06:27,387 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:06:27,388 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:06:27,396 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-27 01:06:27,397 - DEBUG - Submitting callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:06:27,397 - DEBUG - #2 got callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:06:27,397 - DEBUG - Invoking callback
+2024-06-27 01:06:27,398 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:06:27,451 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10e9eeb40>
+2024-06-27 01:06:27,451 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10ea045d0> server_hostname='api.openai.com' timeout=5.0
+2024-06-27 01:06:27,507 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10e9eeab0>
+2024-06-27 01:06:27,508 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:27,508 - DEBUG - send_request_headers.complete
+2024-06-27 01:06:27,508 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:06:27,508 - DEBUG - send_request_body.complete
+2024-06-27 01:06:27,508 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:28,775 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:06:28 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'724'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'80000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'79804'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'147ms'), (b'x-request-id', b'c83a5fc21ac62a304f00dce70e6051a4'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=s2lkqIdOl0U_vAANIwBlWx24ybRDpubgHQqeTydaDQ8-1719439588-1.0.1.1-dqRVx1ri1uy7g.rQsaIRv.vwDvSSrIaO68BVNcRakz1lMDhFEU245fN9xMZNUjZ_agpKyom955ftRkHGUEIV4A; path=/; expires=Wed, 26-Jun-24 22:36:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=evXXTke84.23MGy.awzFfCSBtziXtdeQrq2X2BLy4v8-1719439588851-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a0812ecd0dc1cd-BUD'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:06:28,777 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:06:28,778 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:06:28,778 - DEBUG - receive_response_body.complete
+2024-06-27 01:06:28,779 - DEBUG - response_closed.started
+2024-06-27 01:06:28,779 - DEBUG - response_closed.complete
+2024-06-27 01:06:28,779 - DEBUG - close.started
+2024-06-27 01:06:28,780 - DEBUG - close.complete
+2024-06-27 01:06:29,074 - DEBUG - STREAM b'IHDR' 16 13
+2024-06-27 01:06:29,074 - DEBUG - STREAM b'iCCP' 41 3133
+2024-06-27 01:06:29,074 - DEBUG - iCCP profile name b'ICC Profile'
+2024-06-27 01:06:29,074 - DEBUG - Compression method 0
+2024-06-27 01:06:29,074 - DEBUG - STREAM b'eXIf' 3186 56
+2024-06-27 01:06:29,074 - DEBUG - STREAM b'IDAT' 3254 16384
+2024-06-27 01:06:29,273 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:06:29,274 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:06:29,281 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:06:29,281 - DEBUG - Submitting callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:06:29,281 - DEBUG - #4 got callback <function getaddrinfo at 0x10441b6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:06:29,282 - DEBUG - Invoking callback
+2024-06-27 01:06:29,283 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:06:29,336 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10ea12a20>
+2024-06-27 01:06:29,336 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x10ea073d0> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:06:29,392 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10ea100b0>
+2024-06-27 01:06:29,392 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:29,392 - DEBUG - send_request_headers.complete
+2024-06-27 01:06:29,392 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:06:29,686 - DEBUG - send_request_body.complete
+2024-06-27 01:06:29,687 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:06:31,868 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Wed, 26 Jun 2024 22:06:31 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'207'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'52'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'80000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'75218'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'3.586s'), (b'x-request-id', b'90fa76916fa4ba95b20bf221780a39f8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=VJsboL7Yggp.s2Htmip57x7tARg8BIIEFmDbXqQCD4g-1719439591-1.0.1.1-zOzpjQCwqPihokoBj4.pHZPxlALxFYHfOfgQ3duQOORAW6sD4jki.MmS2X_JJv9OZz4A1eMJbBTfo0AWQWFQlg; path=/; expires=Wed, 26-Jun-24 22:36:31 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=IXVybUphd947D1Tlg9tJBHJoXJI.8bJ8XizpGjtBDdI-1719439591948-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a0813a9e921cd8-BUD'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:06:31,869 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2024-06-27 01:06:31,870 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:06:31,870 - DEBUG - receive_response_body.complete
+2024-06-27 01:06:31,870 - DEBUG - response_closed.started
+2024-06-27 01:06:31,871 - DEBUG - response_closed.complete
+2024-06-27 01:06:31,871 - DEBUG - close.started
+2024-06-27 01:06:31,871 - DEBUG - close.complete
+2024-06-27 01:07:36,065 - DEBUG - Shutting down
+2024-06-27 01:07:36,066 - DEBUG - Waiting for thread #1 to stop...
+2024-06-27 01:07:36,066 - DEBUG - Thread #3 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #5 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #6 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #7 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #8 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #1 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #2 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #4 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #9 stopped
+2024-06-27 01:07:36,066 - DEBUG - Thread #10 stopped
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #2 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #3 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #4 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #5 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #6 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #7 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #8 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #9 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Waiting for thread #10 to stop...
+2024-06-27 01:07:36,067 - DEBUG - Closing
+2024-06-27 01:08:01,311 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:08:01,320 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:08:01,337 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:08:01,337 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:08:01,338 - DEBUG - #2 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:08:01,338 - DEBUG - Invoking callback
+2024-06-27 01:08:01,376 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:08:01,403 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f06120>
+2024-06-27 01:08:01,403 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108bd7450> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:08:01,440 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f058b0>
+2024-06-27 01:08:01,441 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:01,441 - DEBUG - send_request_headers.complete
+2024-06-27 01:08:01,441 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:08:01,470 - DEBUG - send_request_body.complete
+2024-06-27 01:08:01,471 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:02,627 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:08:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'368'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'100'), (b'x-ratelimit-remaining-requests', b'99'), (b'x-ratelimit-reset-requests', b'600ms'), (b'x-request-id', b'b3a102ccebbf4a9a326f360097ab2c5e'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=AGV82kd.PSBenmJqsUMUFxev3_vbHm9ulS53DoDriP4-1719439682-1.0.1.1-P79RNdHnQsKHeSA17rs7dtq1zRqlGkNCzlk.R4Dzf.W7Mx5.X34oCJQlI4K8zyW458fLw32L1_H3lFsQZFT7sQ; path=/; expires=Wed, 26-Jun-24 22:38:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=YEKtpWW5VDyKG2XZkMzD2GnhWV2DZ_1lOCYOhKy0a2A-1719439682646-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a08379e90a50f9-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:08:02,629 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-06-27 01:08:02,629 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:08:02,629 - DEBUG - receive_response_body.complete
+2024-06-27 01:08:02,630 - DEBUG - response_closed.started
+2024-06-27 01:08:02,630 - DEBUG - response_closed.complete
+2024-06-27 01:08:02,630 - DEBUG - close.started
+2024-06-27 01:08:02,631 - DEBUG - close.complete
+2024-06-27 01:08:02,642 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:08:02,643 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:08:02,655 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-27 01:08:02,656 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:08:02,656 - DEBUG - #1 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:08:02,656 - DEBUG - Invoking callback
+2024-06-27 01:08:02,657 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:08:02,683 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3aa20>
+2024-06-27 01:08:02,684 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f505d0> server_hostname='api.openai.com' timeout=5.0
+2024-06-27 01:08:02,725 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3a600>
+2024-06-27 01:08:02,725 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:02,726 - DEBUG - send_request_headers.complete
+2024-06-27 01:08:02,726 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:08:02,726 - DEBUG - send_request_body.complete
+2024-06-27 01:08:02,726 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:03,678 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:08:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'351'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'599806'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'19ms'), (b'x-request-id', b'8a7937b13f9f1cfe8cd75e57f119bedc'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=dCYN77r6kfBY6O0OnVR0ZsAeZGNVW6HfnJZ.oWm4hiI-1719439683-1.0.1.1-OTTu9wrWErF7PUCWGUyD1SG.zjDC4djHkNg7CD1VivxazrAjxMMKwdcgb8HOdq_2j6BqwofbLnmXkepPuvYiQw; path=/; expires=Wed, 26-Jun-24 22:38:03 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=xNRAOWL6KM4nhA1tM_1znxsNopeop1f_kzuvVr22c2E-1719439683791-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a08381fe7968b8-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:08:03,680 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:08:03,680 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:08:03,681 - DEBUG - receive_response_body.complete
+2024-06-27 01:08:03,681 - DEBUG - response_closed.started
+2024-06-27 01:08:03,681 - DEBUG - response_closed.complete
+2024-06-27 01:08:03,682 - DEBUG - close.started
+2024-06-27 01:08:03,682 - DEBUG - close.complete
+2024-06-27 01:08:03,959 - DEBUG - STREAM b'IHDR' 16 13
+2024-06-27 01:08:03,959 - DEBUG - STREAM b'iCCP' 41 3133
+2024-06-27 01:08:03,959 - DEBUG - iCCP profile name b'ICC Profile'
+2024-06-27 01:08:03,959 - DEBUG - Compression method 0
+2024-06-27 01:08:03,959 - DEBUG - STREAM b'eXIf' 3186 56
+2024-06-27 01:08:03,959 - DEBUG - STREAM b'IDAT' 3254 16384
+2024-06-27 01:08:04,156 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:08:04,156 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:08:04,164 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:08:04,164 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:08:04,164 - DEBUG - #3 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:08:04,164 - DEBUG - Invoking callback
+2024-06-27 01:08:04,165 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:08:04,203 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3b050>
+2024-06-27 01:08:04,203 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f53450> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:08:04,250 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f5c080>
+2024-06-27 01:08:04,251 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:04,251 - DEBUG - send_request_headers.complete
+2024-06-27 01:08:04,251 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:08:04,513 - DEBUG - send_request_body.complete
+2024-06-27 01:08:04,513 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:09,146 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:08:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'4063'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'595221'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'477ms'), (b'x-request-id', b'928ffa8c241c7f29df3290dead8abea5'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=u6y5.4GFSp89qXW9OOJ5eTxLnujH5abEMa4DnNUT6y4-1719439689-1.0.1.1-cweLgYjxZxvOylXXbHADynR8MG_0f4Zd1JiIbdHHgIy1lSHA0WF.4XwtVO6bbOVrBJVPNTmNLEJgy0WH0iOKUw; path=/; expires=Wed, 26-Jun-24 22:38:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=gxLWZ0hlQbH1fphbfuOjx4Hqa4n4.vGEYkqo5QLSaf8-1719439689261-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a0838b8a3a26ec-OTP'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:08:09,148 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:08:09,148 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:08:09,148 - DEBUG - receive_response_body.complete
+2024-06-27 01:08:09,149 - DEBUG - response_closed.started
+2024-06-27 01:08:09,149 - DEBUG - response_closed.complete
+2024-06-27 01:08:09,149 - DEBUG - close.started
+2024-06-27 01:08:09,149 - DEBUG - close.complete
+2024-06-27 01:08:09,166 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:08:09,167 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:08:09,178 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:08:09,179 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:08:09,179 - DEBUG - #4 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:08:09,179 - DEBUG - Invoking callback
+2024-06-27 01:08:09,230 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:08:09,309 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fba270>
+2024-06-27 01:08:09,309 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f539d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:08:09,351 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb97f0>
+2024-06-27 01:08:09,352 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:09,352 - DEBUG - send_request_headers.complete
+2024-06-27 01:08:09,352 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:08:09,352 - DEBUG - send_request_body.complete
+2024-06-27 01:08:09,352 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:08:11,068 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:08:08 GMT'), (b'server', b'uvicorn'), (b'request-id', b'uE2crIl6Y0RNg9vrghtD'), (b'history-item-id', b'iP8Lo8WRQvfFQRQBXjo8'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'76'), (b'tts-latency-ms', b'1449'), (b'Content-Length', b'96548'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:08:11,070 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:08:11,070 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:08:11,175 - DEBUG - receive_response_body.complete
+2024-06-27 01:08:11,176 - DEBUG - response_closed.started
+2024-06-27 01:08:11,176 - DEBUG - response_closed.complete
+2024-06-27 01:08:11,176 - DEBUG - close.started
+2024-06-27 01:08:11,177 - DEBUG - close.complete
+2024-06-27 01:09:00,038 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:00,040 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:00,049 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:00,049 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:00,049 - DEBUG - #5 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:00,049 - DEBUG - Invoking callback
+2024-06-27 01:09:00,051 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:09:00,125 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e3386b0>
+2024-06-27 01:09:00,126 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f511d0> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:09:00,172 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f97a10>
+2024-06-27 01:09:00,173 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:00,173 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:00,173 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:00,175 - DEBUG - send_request_body.complete
+2024-06-27 01:09:00,175 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:01,192 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'328'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'100'), (b'x-ratelimit-remaining-requests', b'99'), (b'x-ratelimit-reset-requests', b'600ms'), (b'x-request-id', b'2dbc909d89079d0c3c98b5333b89f919'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=HMqZqdFRLJpoIL6uGx9v6SSePyFSb4UG21YhsUN5yBY-1719439741-1.0.1.1-DNeXXgdT.P68jTw_7A7R8WR4ieHy2NA06QdIxcq9fkQD6wb01TcDnaFzhDlnVn_viE.a0ap6QtCnZ6GkbLJ8MQ; path=/; expires=Wed, 26-Jun-24 22:39:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=PRfxzEP7VtxYXPTMmbC.3RhsK0sSYAtKA7HpneZ3tHc-1719439741209-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a084e91c790528-OTP'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:01,193 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-06-27 01:09:01,193 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:01,193 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:01,193 - DEBUG - response_closed.started
+2024-06-27 01:09:01,193 - DEBUG - response_closed.complete
+2024-06-27 01:09:01,194 - DEBUG - close.started
+2024-06-27 01:09:01,194 - DEBUG - close.complete
+2024-06-27 01:09:01,205 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:01,205 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:01,216 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-27 01:09:01,216 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:01,218 - DEBUG - #6 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:01,218 - DEBUG - Invoking callback
+2024-06-27 01:09:01,219 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:09:01,259 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108ee2750>
+2024-06-27 01:09:01,259 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc4dd0> server_hostname='api.openai.com' timeout=5.0
+2024-06-27 01:09:01,347 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fbbef0>
+2024-06-27 01:09:01,347 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:01,347 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:01,347 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:01,348 - DEBUG - send_request_body.complete
+2024-06-27 01:09:01,348 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:02,172 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'434'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'599811'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'18ms'), (b'x-request-id', b'7351fc9b1adee2da9adee2ad84fc15d1'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=k_K17xszmBcZmlTmD29dJCfoE0sJUTt3sTH0BaybqBs-1719439742-1.0.1.1-HFAwRwBxKnRRsUmamLeja.tVMs65RVYu5TpFwIkPBWxdsBtBId8SGTJmkaUx7MTmZa5czWI2_D5HDwMAvcKsAw; path=/; expires=Wed, 26-Jun-24 22:39:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=PB9lxwzDPtiMmx1EShRwoA0e1iF4KFHtaxD0VvNhIUw-1719439742268-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a084f069aab9e1-OTP'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:02,173 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:09:02,174 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:02,174 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:02,175 - DEBUG - response_closed.started
+2024-06-27 01:09:02,175 - DEBUG - response_closed.complete
+2024-06-27 01:09:02,175 - DEBUG - close.started
+2024-06-27 01:09:02,175 - DEBUG - close.complete
+2024-06-27 01:09:02,176 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:02,177 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:02,191 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:02,191 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:02,191 - DEBUG - #7 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:02,191 - DEBUG - Invoking callback
+2024-06-27 01:09:02,193 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:09:02,277 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb8f80>
+2024-06-27 01:09:02,277 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc53d0> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:09:02,345 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb9790>
+2024-06-27 01:09:02,346 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:02,347 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:02,347 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:02,347 - DEBUG - send_request_body.complete
+2024-06-27 01:09:02,347 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:03,912 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'1188'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'599631'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'36ms'), (b'x-request-id', b'a5d7c912ae2080b6f163b5d342a1815b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=wuedyWldtKSufoFBBoeZCZXFIPh9TVheUWm.IaNjigE-1719439744-1.0.1.1-d8QV9m90EMDAPze3yw0XNwdSp.SEV5O3nwdY2kIH.vsf6XpC3jpQHYPDGlzOyNqTAgFCVPbdeONmeSKCQNFemQ; path=/; expires=Wed, 26-Jun-24 22:39:04 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=QMwpJ.2Klr4lJ9p_eYjJ9msiP7AXglwelP78e35SQ3c-1719439744010-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a084f6afcfc1b7-BUD'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:03,913 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:09:03,913 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:03,914 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:03,914 - DEBUG - response_closed.started
+2024-06-27 01:09:03,914 - DEBUG - response_closed.complete
+2024-06-27 01:09:03,915 - DEBUG - close.started
+2024-06-27 01:09:03,915 - DEBUG - close.complete
+2024-06-27 01:09:03,931 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:03,932 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:03,946 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:03,946 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:03,946 - DEBUG - #8 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:03,946 - DEBUG - Invoking callback
+2024-06-27 01:09:03,947 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:04,062 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e338590>
+2024-06-27 01:09:04,062 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc5ad0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:04,101 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e338f50>
+2024-06-27 01:09:04,101 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:04,101 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:04,101 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:04,102 - DEBUG - send_request_body.complete
+2024-06-27 01:09:04,102 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:06,295 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:04 GMT'), (b'server', b'uvicorn'), (b'request-id', b'uQZ7FJ7vKAaGKDxC3UuK'), (b'history-item-id', b'qRqXoMMpcEILYKOroHr5'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'143'), (b'tts-latency-ms', b'1962'), (b'Content-Length', b'146285'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:06,297 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:06,297 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:06,605 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:06,605 - DEBUG - response_closed.started
+2024-06-27 01:09:06,605 - DEBUG - response_closed.complete
+2024-06-27 01:09:06,606 - DEBUG - close.started
+2024-06-27 01:09:06,606 - DEBUG - close.complete
+2024-06-27 01:09:06,619 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:06,620 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:06,633 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:06,633 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:06,633 - DEBUG - #9 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:06,633 - DEBUG - Invoking callback
+2024-06-27 01:09:06,635 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:06,668 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb9b50>
+2024-06-27 01:09:06,669 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc54d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:06,707 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e33adb0>
+2024-06-27 01:09:06,707 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:06,708 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:06,708 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:06,708 - DEBUG - send_request_body.complete
+2024-06-27 01:09:06,708 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:08,152 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:06 GMT'), (b'server', b'uvicorn'), (b'request-id', b'SP57ymplo2x1tUGkDWDa'), (b'history-item-id', b'e18ETadNeIw0rlq6KtB0'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'68'), (b'tts-latency-ms', b'1211'), (b'Content-Length', b'66037'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:08,153 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:08,153 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:08,239 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:08,240 - DEBUG - response_closed.started
+2024-06-27 01:09:08,240 - DEBUG - response_closed.complete
+2024-06-27 01:09:08,241 - DEBUG - close.started
+2024-06-27 01:09:08,242 - DEBUG - close.complete
+2024-06-27 01:09:36,308 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:36,310 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:36,324 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:36,324 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:36,324 - DEBUG - #10 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:36,324 - DEBUG - Invoking callback
+2024-06-27 01:09:36,368 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:09:36,398 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e33b7a0>
+2024-06-27 01:09:36,398 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1085de2d0> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:09:36,445 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10807acc0>
+2024-06-27 01:09:36,446 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:36,446 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:36,446 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:36,536 - DEBUG - send_request_body.complete
+2024-06-27 01:09:36,536 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:38,236 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:38 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'405'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'100'), (b'x-ratelimit-remaining-requests', b'99'), (b'x-ratelimit-reset-requests', b'600ms'), (b'x-request-id', b'b550484274b18da7dd3a754900e4e635'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Fxg9XvG_AULB6h6vVofc4jLJcmin_d1rV.khUAfcqB4-1719439778-1.0.1.1-65txAfVZ8tX4e60MN4eBo57bxMBioiZO31td6CU2atzWWdKOAaFIi7QuR.CF0VIdkRbdd.ZlNQhQiDHcb7x7Hg; path=/; expires=Wed, 26-Jun-24 22:39:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=69kAw4IcPDRrlFah8TK2_rWz_VenRcGGrrfcXFBV5bc-1719439778356-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a085cbba157206-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:38,239 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-06-27 01:09:38,239 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:38,239 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:38,240 - DEBUG - response_closed.started
+2024-06-27 01:09:38,240 - DEBUG - response_closed.complete
+2024-06-27 01:09:38,240 - DEBUG - close.started
+2024-06-27 01:09:38,241 - DEBUG - close.complete
+2024-06-27 01:09:38,257 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:38,258 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:38,273 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-27 01:09:38,273 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:38,273 - DEBUG - #2 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:38,273 - DEBUG - Invoking callback
+2024-06-27 01:09:38,274 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:09:38,317 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f38470>
+2024-06-27 01:09:38,317 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc67d0> server_hostname='api.openai.com' timeout=5.0
+2024-06-27 01:09:38,363 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f384a0>
+2024-06-27 01:09:38,363 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:38,364 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:38,364 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:38,364 - DEBUG - send_request_body.complete
+2024-06-27 01:09:38,364 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:39,134 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:39 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'377'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'599798'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'20ms'), (b'x-request-id', b'38bcb4db41321eeea7b0d9aa4bf8a914'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=8i9d3Q3N7a6Yq7iJKszk0vBEFmAWZnlGkwj4cLmaUJA-1719439779-1.0.1.1-DH0G2R3WMTaXz1v4bIIf6TIPjWAXGjaGh7yBSVhQfV2_ntgT8yFYNK.CvL0Q3n5zJlE9JTB.jppTYKfHYvA9lA; path=/; expires=Wed, 26-Jun-24 22:39:39 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=Ft2s0jAxdQJkx7tbKuOzTWf85SJ4j9rHF3AO1ZIognc-1719439779254-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a085d7cb1a0551-OTP'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:39,135 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:09:39,136 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:39,137 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:39,137 - DEBUG - response_closed.started
+2024-06-27 01:09:39,137 - DEBUG - response_closed.complete
+2024-06-27 01:09:39,137 - DEBUG - close.started
+2024-06-27 01:09:39,138 - DEBUG - close.complete
+2024-06-27 01:09:39,404 - DEBUG - STREAM b'IHDR' 16 13
+2024-06-27 01:09:39,404 - DEBUG - STREAM b'iCCP' 41 3133
+2024-06-27 01:09:39,405 - DEBUG - iCCP profile name b'ICC Profile'
+2024-06-27 01:09:39,405 - DEBUG - Compression method 0
+2024-06-27 01:09:39,405 - DEBUG - STREAM b'eXIf' 3186 56
+2024-06-27 01:09:39,405 - DEBUG - STREAM b'IDAT' 3254 16384
+2024-06-27 01:09:39,597 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:39,598 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:39,605 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:39,605 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:39,605 - DEBUG - #1 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:39,605 - DEBUG - Invoking callback
+2024-06-27 01:09:39,607 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:09:39,633 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3abd0>
+2024-06-27 01:09:39,633 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc5850> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:09:39,666 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3ac00>
+2024-06-27 01:09:39,666 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:39,666 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:39,666 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:39,907 - DEBUG - send_request_body.complete
+2024-06-27 01:09:39,907 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:50,348 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:09:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'8875'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'595213'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'478ms'), (b'x-request-id', b'76d1f4dc68cc58172c8b5b5db4dbeffb'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Ls0IeGNv9FLpdapLht38WTF_eLxPPhs_ywmXL6yAu8g-1719439790-1.0.1.1-Eq9Hnh4l70jXuQW059XHxEIXAyx.Hhar716kMAJRzfF_s5VCWv9I9byiQZlTSi5NgmB6gN_BSRftVM2g9vyvuA; path=/; expires=Wed, 26-Jun-24 22:39:50 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=GshC8oStLy_eaETBDmgQK8jXonPTisbN1DZPBBD5.S8-1719439790399-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a085dfddca519b-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:09:50,351 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:09:50,351 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:50,352 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:50,352 - DEBUG - response_closed.started
+2024-06-27 01:09:50,352 - DEBUG - response_closed.complete
+2024-06-27 01:09:50,352 - DEBUG - close.started
+2024-06-27 01:09:50,353 - DEBUG - close.complete
+2024-06-27 01:09:50,376 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:50,377 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:50,397 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:50,397 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:50,397 - DEBUG - #3 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:50,397 - DEBUG - Invoking callback
+2024-06-27 01:09:50,402 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:50,434 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fba270>
+2024-06-27 01:09:50,434 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc7250> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:50,471 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fbae40>
+2024-06-27 01:09:50,471 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:50,472 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:50,472 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:50,472 - DEBUG - send_request_body.complete
+2024-06-27 01:09:50,472 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:52,314 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:49 GMT'), (b'server', b'uvicorn'), (b'request-id', b'02x7i07WPMu38t5YeAdX'), (b'history-item-id', b'IDoAp78WLpWSDFKexVNS'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'78'), (b'tts-latency-ms', b'1505'), (b'Content-Length', b'98638'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:52,315 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:52,315 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:52,423 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:52,424 - DEBUG - response_closed.started
+2024-06-27 01:09:52,424 - DEBUG - response_closed.complete
+2024-06-27 01:09:52,425 - DEBUG - close.started
+2024-06-27 01:09:52,425 - DEBUG - close.complete
+2024-06-27 01:09:52,434 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:52,435 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:52,449 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:52,449 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:52,450 - DEBUG - #4 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:52,450 - DEBUG - Invoking callback
+2024-06-27 01:09:52,451 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:52,486 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e339e20>
+2024-06-27 01:09:52,486 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6fd0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:52,526 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e339f40>
+2024-06-27 01:09:52,526 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:52,526 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:52,527 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:52,527 - DEBUG - send_request_body.complete
+2024-06-27 01:09:52,527 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:53,903 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:51 GMT'), (b'server', b'uvicorn'), (b'request-id', b'F1tVj6eytfSp3aJr72Om'), (b'history-item-id', b'YzYyd7JFj7hUseYsquPe'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'65'), (b'tts-latency-ms', b'1151'), (b'content-length', b'58514'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:53,904 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:53,905 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:53,975 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:53,975 - DEBUG - response_closed.started
+2024-06-27 01:09:53,975 - DEBUG - response_closed.complete
+2024-06-27 01:09:53,976 - DEBUG - close.started
+2024-06-27 01:09:53,976 - DEBUG - close.complete
+2024-06-27 01:09:53,980 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:53,980 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:53,993 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:53,993 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:53,994 - DEBUG - #5 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:53,994 - DEBUG - Invoking callback
+2024-06-27 01:09:53,996 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:54,030 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108ee3b30>
+2024-06-27 01:09:54,030 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f53650> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:54,070 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e33b980>
+2024-06-27 01:09:54,070 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:54,071 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:54,071 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:54,071 - DEBUG - send_request_body.complete
+2024-06-27 01:09:54,071 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:56,282 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:54 GMT'), (b'server', b'uvicorn'), (b'request-id', b'1Fsh1ckksU2TWhGcH4pE'), (b'history-item-id', b'WBRJJx7fKdCDvSlta8Vt'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'119'), (b'tts-latency-ms', b'1934'), (b'Content-Length', b'118700'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:56,283 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:56,284 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:56,385 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:56,385 - DEBUG - response_closed.started
+2024-06-27 01:09:56,385 - DEBUG - response_closed.complete
+2024-06-27 01:09:56,385 - DEBUG - close.started
+2024-06-27 01:09:56,385 - DEBUG - close.complete
+2024-06-27 01:09:56,391 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:56,392 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:56,400 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:56,400 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:56,401 - DEBUG - #6 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:56,401 - DEBUG - Invoking callback
+2024-06-27 01:09:56,402 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:56,436 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x100390110>
+2024-06-27 01:09:56,436 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6750> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:56,474 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb97f0>
+2024-06-27 01:09:56,474 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:56,474 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:56,474 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:56,474 - DEBUG - send_request_body.complete
+2024-06-27 01:09:56,474 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:58,455 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:56 GMT'), (b'server', b'uvicorn'), (b'request-id', b'A73OJZV7EJJjqfQ7thTt'), (b'history-item-id', b'K0Ia7g5TvoXa1HbivN2r'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'117'), (b'tts-latency-ms', b'1705'), (b'Content-Length', b'117446'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:09:58,456 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:09:58,456 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:09:58,565 - DEBUG - receive_response_body.complete
+2024-06-27 01:09:58,565 - DEBUG - response_closed.started
+2024-06-27 01:09:58,566 - DEBUG - response_closed.complete
+2024-06-27 01:09:58,566 - DEBUG - close.started
+2024-06-27 01:09:58,566 - DEBUG - close.complete
+2024-06-27 01:09:58,569 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:09:58,570 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:09:58,575 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:09:58,575 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:09:58,576 - DEBUG - #7 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:09:58,577 - DEBUG - Invoking callback
+2024-06-27 01:09:58,584 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:09:58,643 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fbaa50>
+2024-06-27 01:09:58,643 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6950> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:09:58,688 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb8dd0>
+2024-06-27 01:09:58,689 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:09:58,689 - DEBUG - send_request_headers.complete
+2024-06-27 01:09:58,689 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:09:58,689 - DEBUG - send_request_body.complete
+2024-06-27 01:09:58,689 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:07,243 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:09:58 GMT'), (b'server', b'uvicorn'), (b'request-id', b'SBjI0oCsKrChUHYNHVXk'), (b'history-item-id', b'h8WESVa2xevLyBRwg64e'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'542'), (b'tts-latency-ms', b'8299'), (b'content-length', b'652852'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:10:07,245 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:10:07,245 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:10:07,561 - DEBUG - receive_response_body.complete
+2024-06-27 01:10:07,562 - DEBUG - response_closed.started
+2024-06-27 01:10:07,562 - DEBUG - response_closed.complete
+2024-06-27 01:10:07,562 - DEBUG - close.started
+2024-06-27 01:10:07,563 - DEBUG - close.complete
+2024-06-27 01:10:07,588 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:10:07,588 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:10:07,595 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:10:07,595 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:10:07,595 - DEBUG - #8 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:10:07,595 - DEBUG - Invoking callback
+2024-06-27 01:10:07,596 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:10:07,656 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f384a0>
+2024-06-27 01:10:07,656 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1085de2d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:10:07,693 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f3b0e0>
+2024-06-27 01:10:07,693 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:07,693 - DEBUG - send_request_headers.complete
+2024-06-27 01:10:07,693 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:10:07,694 - DEBUG - send_request_body.complete
+2024-06-27 01:10:07,694 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:09,498 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:10:07 GMT'), (b'server', b'uvicorn'), (b'request-id', b'ZNqicXbIUn5iBKyBUy9l'), (b'history-item-id', b'Ov838Z5P2u5ZqExfAMJU'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'102'), (b'tts-latency-ms', b'1569'), (b'Content-Length', b'101564'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:10:09,499 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:10:09,500 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:10:09,777 - DEBUG - receive_response_body.complete
+2024-06-27 01:10:09,777 - DEBUG - response_closed.started
+2024-06-27 01:10:09,778 - DEBUG - response_closed.complete
+2024-06-27 01:10:09,778 - DEBUG - close.started
+2024-06-27 01:10:09,778 - DEBUG - close.complete
+2024-06-27 01:10:09,786 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:10:09,787 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:10:09,797 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:10:09,798 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:10:09,798 - DEBUG - #9 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:10:09,798 - DEBUG - Invoking callback
+2024-06-27 01:10:09,800 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:10:09,857 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e348830>
+2024-06-27 01:10:09,857 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f53bd0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:10:09,894 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e34ac30>
+2024-06-27 01:10:09,895 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:09,895 - DEBUG - send_request_headers.complete
+2024-06-27 01:10:09,895 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:10:09,895 - DEBUG - send_request_body.complete
+2024-06-27 01:10:09,895 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:13,613 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:10:09 GMT'), (b'server', b'uvicorn'), (b'request-id', b'TovaDEdZUusv4L9T4dOc'), (b'history-item-id', b'jrJVXKNrfAuQfz2Vwdcs'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'197'), (b'tts-latency-ms', b'3473'), (b'content-length', b'271255'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:10:13,614 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:10:13,615 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:10:13,818 - DEBUG - receive_response_body.complete
+2024-06-27 01:10:13,819 - DEBUG - response_closed.started
+2024-06-27 01:10:13,819 - DEBUG - response_closed.complete
+2024-06-27 01:10:13,820 - DEBUG - close.started
+2024-06-27 01:10:13,820 - DEBUG - close.complete
+2024-06-27 01:10:13,840 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:10:13,841 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:10:13,852 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:10:13,852 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:10:13,852 - DEBUG - #10 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:10:13,852 - DEBUG - Invoking callback
+2024-06-27 01:10:13,854 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:10:13,886 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e34be90>
+2024-06-27 01:10:13,886 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6550> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:10:13,945 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb99d0>
+2024-06-27 01:10:13,946 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:13,946 - DEBUG - send_request_headers.complete
+2024-06-27 01:10:13,946 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:10:13,946 - DEBUG - send_request_body.complete
+2024-06-27 01:10:13,946 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:16,075 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:10:13 GMT'), (b'server', b'uvicorn'), (b'request-id', b'8FQW0c4Ehoo8ACZiD1KA'), (b'history-item-id', b'rHAucNeByUwyPQenndSu'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'126'), (b'tts-latency-ms', b'1888'), (b'content-length', b'144195'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:10:16,076 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:10:16,077 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:10:16,239 - DEBUG - receive_response_body.complete
+2024-06-27 01:10:16,239 - DEBUG - response_closed.started
+2024-06-27 01:10:16,240 - DEBUG - response_closed.complete
+2024-06-27 01:10:16,240 - DEBUG - close.started
+2024-06-27 01:10:16,240 - DEBUG - close.complete
+2024-06-27 01:10:16,252 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:10:16,253 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:10:16,266 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:10:16,266 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:10:16,267 - DEBUG - #2 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:10:16,267 - DEBUG - Invoking callback
+2024-06-27 01:10:16,268 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:10:16,304 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fbade0>
+2024-06-27 01:10:16,304 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc7cd0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:10:16,346 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb8fb0>
+2024-06-27 01:10:16,346 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:16,347 - DEBUG - send_request_headers.complete
+2024-06-27 01:10:16,347 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:10:16,347 - DEBUG - send_request_body.complete
+2024-06-27 01:10:16,347 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:10:18,398 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:10:15 GMT'), (b'server', b'uvicorn'), (b'request-id', b'N54X6sorGpAp4lRTBYzK'), (b'history-item-id', b'6EzpQDrV28ukWSkqw89Y'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'116'), (b'tts-latency-ms', b'1816'), (b'Content-Length', b'136672'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:10:18,398 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:10:18,398 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:10:18,544 - DEBUG - receive_response_body.complete
+2024-06-27 01:10:18,544 - DEBUG - response_closed.started
+2024-06-27 01:10:18,545 - DEBUG - response_closed.complete
+2024-06-27 01:10:18,545 - DEBUG - close.started
+2024-06-27 01:10:18,545 - DEBUG - close.complete
+2024-06-27 01:12:40,439 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:40,442 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:40,457 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:40,457 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:40,458 - DEBUG - #1 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:40,458 - DEBUG - Invoking callback
+2024-06-27 01:12:40,573 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:12:40,606 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e3493d0>
+2024-06-27 01:12:40,606 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6f50> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:12:40,643 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e33b440>
+2024-06-27 01:12:40,643 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:40,644 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:40,644 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:40,700 - DEBUG - send_request_body.complete
+2024-06-27 01:12:40,700 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:41,869 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:12:41 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'343'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'100'), (b'x-ratelimit-remaining-requests', b'99'), (b'x-ratelimit-reset-requests', b'600ms'), (b'x-request-id', b'req_92461dafb0ebf39f8581f14bb9807321'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=4FQkls8rWgSGAjKKlWvsiKVIzSsw.YoVyzMrdonFxeM-1719439961-1.0.1.1-tP5J6Rv65uLxDGRs6nEEtVxW6fbf2rUD3p9OOAykbyoRTbDFhpIsCznxIDgTHLNqhCFgmASHm4O_OpPPa1sBFA; path=/; expires=Wed, 26-Jun-24 22:42:41 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=HSLVlC7dpOrcB6Ooy90JMtCW_Xb9_g.DTlmbbJtBZCs-1719439961886-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a08a4afcb068b1-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:12:41,871 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-06-27 01:12:41,872 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:41,873 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:41,876 - DEBUG - response_closed.started
+2024-06-27 01:12:41,878 - DEBUG - response_closed.complete
+2024-06-27 01:12:41,879 - DEBUG - close.started
+2024-06-27 01:12:41,881 - DEBUG - close.complete
+2024-06-27 01:12:41,900 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:41,901 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:41,917 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-06-27 01:12:41,917 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:41,917 - DEBUG - #3 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:41,918 - DEBUG - Invoking callback
+2024-06-27 01:12:41,920 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443))]
+2024-06-27 01:12:41,947 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fba210>
+2024-06-27 01:12:41,947 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc7c50> server_hostname='api.openai.com' timeout=5.0
+2024-06-27 01:12:41,979 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108fb9ac0>
+2024-06-27 01:12:41,979 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:41,980 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:41,980 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:41,980 - DEBUG - send_request_body.complete
+2024-06-27 01:12:41,980 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:42,648 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:12:42 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'401'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'599808'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'19ms'), (b'x-request-id', b'req_c4b8a87099fe1531e99a5113f7099e83'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=R1dxe8_5YzWnr15TYABZDlM8gUhWgQOSkNcD0ShQccE-1719439962-1.0.1.1-uv.FJKwENXmZuPT35GY.ByPi.0e.PW2dKmsbOj1QIaHnQeWLU97SaYFpYRijMtsmh.1gxK1_rdoZLI4_fJaJrg; path=/; expires=Wed, 26-Jun-24 22:42:42 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=yeKm_cAkK1OkPozsKaLlJqe4YiJrS4vtEmbPu4MlbCw-1719439962770-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a08a5359a35061-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:12:42,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:12:42,650 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:42,651 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:42,651 - DEBUG - response_closed.started
+2024-06-27 01:12:42,651 - DEBUG - response_closed.complete
+2024-06-27 01:12:42,652 - DEBUG - close.started
+2024-06-27 01:12:42,652 - DEBUG - close.complete
+2024-06-27 01:12:42,937 - DEBUG - STREAM b'IHDR' 16 13
+2024-06-27 01:12:42,937 - DEBUG - STREAM b'iCCP' 41 3133
+2024-06-27 01:12:42,937 - DEBUG - iCCP profile name b'ICC Profile'
+2024-06-27 01:12:42,937 - DEBUG - Compression method 0
+2024-06-27 01:12:42,937 - DEBUG - STREAM b'eXIf' 3186 56
+2024-06-27 01:12:42,938 - DEBUG - STREAM b'IDAT' 3254 16384
+2024-06-27 01:12:43,133 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:43,133 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:43,143 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:43,144 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:43,145 - DEBUG - #4 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.openai.com', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:43,145 - DEBUG - Invoking callback
+2024-06-27 01:12:43,147 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.7.192', 443)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('104.18.6.192', 443))]
+2024-06-27 01:12:43,174 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e34a510>
+2024-06-27 01:12:43,174 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc6c50> server_hostname='api.openai.com' timeout=None
+2024-06-27 01:12:43,206 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e349be0>
+2024-06-27 01:12:43,206 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:43,206 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:43,206 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:43,387 - DEBUG - send_request_body.complete
+2024-06-27 01:12:43,388 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:52,121 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 26 Jun 2024 22:12:52 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-tou20y6xp4qszmxbhrxjcgtt'), (b'openai-processing-ms', b'7567'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'600000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'595221'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'477ms'), (b'x-request-id', b'req_e848ae697d213d9339461a6c0f6ca85d'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=cVLQdrHs.c7QjdAVoeCUfzdpSaMhlb8oMP0B9Vy6AuE-1719439972-1.0.1.1-wsYa_k0oy2HzhwI.KAOAoiguJ3LOUU3J7gm8nPznoKuEauy1Rc6JTzO0Ppq24qDmQOFN9pOXPqCWpDXfr7CCBA; path=/; expires=Wed, 26-Jun-24 22:42:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=Uy51ZqarCWzVRN1eP_a1jB4TUVzxwsBsP5ix.VC921k-1719439972206-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a08a5aff1a50cf-IST'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-06-27 01:12:52,123 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-06-27 01:12:52,124 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:52,132 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:52,132 - DEBUG - response_closed.started
+2024-06-27 01:12:52,132 - DEBUG - response_closed.complete
+2024-06-27 01:12:52,133 - DEBUG - close.started
+2024-06-27 01:12:52,134 - DEBUG - close.complete
+2024-06-27 01:12:52,154 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:52,155 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:52,167 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:52,167 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:52,167 - DEBUG - #5 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:52,167 - DEBUG - Invoking callback
+2024-06-27 01:12:52,168 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:12:52,205 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e36b920>
+2024-06-27 01:12:52,205 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc72d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:12:52,242 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e34b8c0>
+2024-06-27 01:12:52,242 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:52,243 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:52,243 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:52,243 - DEBUG - send_request_body.complete
+2024-06-27 01:12:52,243 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:53,344 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:12:52 GMT'), (b'server', b'uvicorn'), (b'request-id', b'dtAi2tbyW1NcolrbNbMz'), (b'history-item-id', b'SDgLzIMRKlJOd2X2Bp4E'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'12'), (b'tts-latency-ms', b'801'), (b'Content-Length', b'22151'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:12:53,345 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:12:53,345 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:53,382 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:53,382 - DEBUG - response_closed.started
+2024-06-27 01:12:53,383 - DEBUG - response_closed.complete
+2024-06-27 01:12:53,383 - DEBUG - close.started
+2024-06-27 01:12:53,383 - DEBUG - close.complete
+2024-06-27 01:12:53,386 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:53,387 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:53,399 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:53,399 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:53,399 - DEBUG - #6 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:53,399 - DEBUG - Invoking callback
+2024-06-27 01:12:53,401 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:12:53,435 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x10807acc0>
+2024-06-27 01:12:53,435 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc7450> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:12:53,474 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e36b4a0>
+2024-06-27 01:12:53,475 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:53,475 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:53,475 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:53,475 - DEBUG - send_request_body.complete
+2024-06-27 01:12:53,475 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:55,587 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:12:53 GMT'), (b'server', b'uvicorn'), (b'request-id', b'CXoSBhVCEB32wtsL8Jc6'), (b'history-item-id', b'zPb8QElHNfp9DjsMfsAC'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'121'), (b'tts-latency-ms', b'1807'), (b'Content-Length', b'134164'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:12:55,587 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:12:55,588 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:55,716 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:55,717 - DEBUG - response_closed.started
+2024-06-27 01:12:55,717 - DEBUG - response_closed.complete
+2024-06-27 01:12:55,717 - DEBUG - close.started
+2024-06-27 01:12:55,717 - DEBUG - close.complete
+2024-06-27 01:12:55,723 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:55,724 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:55,732 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:55,732 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:55,732 - DEBUG - #7 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:55,732 - DEBUG - Invoking callback
+2024-06-27 01:12:55,733 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:12:55,768 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e36a8d0>
+2024-06-27 01:12:55,768 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108f53650> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:12:55,811 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e36ac30>
+2024-06-27 01:12:55,811 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:55,811 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:55,811 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:55,812 - DEBUG - send_request_body.complete
+2024-06-27 01:12:55,812 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:58,341 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:12:55 GMT'), (b'server', b'uvicorn'), (b'request-id', b'fOSZtZrSV4zUc8DMrzf6'), (b'history-item-id', b'C3bSjN7dd2vwfeiqgCRj'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'186'), (b'tts-latency-ms', b'2299'), (b'content-length', b'185573'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:12:58,342 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:12:58,342 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:12:58,545 - DEBUG - receive_response_body.complete
+2024-06-27 01:12:58,545 - DEBUG - response_closed.started
+2024-06-27 01:12:58,545 - DEBUG - response_closed.complete
+2024-06-27 01:12:58,545 - DEBUG - close.started
+2024-06-27 01:12:58,546 - DEBUG - close.complete
+2024-06-27 01:12:58,558 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:12:58,559 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:12:58,577 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:12:58,577 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:12:58,577 - DEBUG - #8 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:12:58,577 - DEBUG - Invoking callback
+2024-06-27 01:12:58,580 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:12:58,616 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x101eca4b0>
+2024-06-27 01:12:58,616 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1085de2d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:12:58,655 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f97f20>
+2024-06-27 01:12:58,656 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:12:58,656 - DEBUG - send_request_headers.complete
+2024-06-27 01:12:58,656 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:12:58,656 - DEBUG - send_request_body.complete
+2024-06-27 01:12:58,656 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:13:04,210 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:12:58 GMT'), (b'server', b'uvicorn'), (b'request-id', b'PDwaEkcopRUErenTa6Gw'), (b'history-item-id', b'ksYR0y5r6G2R47idh90p'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'328'), (b'tts-latency-ms', b'5325'), (b'Content-Length', b'420466'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:13:04,212 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:13:04,212 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:13:04,376 - DEBUG - receive_response_body.complete
+2024-06-27 01:13:04,376 - DEBUG - response_closed.started
+2024-06-27 01:13:04,376 - DEBUG - response_closed.complete
+2024-06-27 01:13:04,377 - DEBUG - close.started
+2024-06-27 01:13:04,377 - DEBUG - close.complete
+2024-06-27 01:13:04,397 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-06-27 01:13:04,398 - DEBUG - load_verify_locations cafile='/Users/sadikbarisadiguzel/Documents/GitHub/customgpt/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-06-27 01:13:04,406 - DEBUG - connect_tcp.started host='api.elevenlabs.io' port=443 local_address=None timeout=None socket_options=None
+2024-06-27 01:13:04,406 - DEBUG - Submitting callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} to thread worker queue
+2024-06-27 01:13:04,406 - DEBUG - #9 got callback <function getaddrinfo at 0x10057f6a0> with args (b'api.elevenlabs.io', 443, <AddressFamily.AF_UNSPEC: 0>, <SocketKind.SOCK_STREAM: 1>, 0, 0) and kwargs {} from queue
+2024-06-27 01:13:04,406 - DEBUG - Invoking callback
+2024-06-27 01:13:04,407 - DEBUG - Setting Future result: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('34.160.99.201', 443))]
+2024-06-27 01:13:04,448 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x108f97c80>
+2024-06-27 01:13:04,448 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x108fc77d0> server_hostname='api.elevenlabs.io' timeout=None
+2024-06-27 01:13:04,486 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x14e368560>
+2024-06-27 01:13:04,486 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-06-27 01:13:04,486 - DEBUG - send_request_headers.complete
+2024-06-27 01:13:04,486 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-06-27 01:13:04,487 - DEBUG - send_request_body.complete
+2024-06-27 01:13:04,487 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-06-27 01:13:07,157 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Wed, 26 Jun 2024 22:13:03 GMT'), (b'server', b'uvicorn'), (b'request-id', b'iGfCwdmzKo7thag4VFKq'), (b'history-item-id', b'GtJasr8psGbE6KE5jmOq'), (b'access-control-expose-headers', b'request-id, history-item-id, tts-latency-ms, character-cost'), (b'character-cost', b'164'), (b'tts-latency-ms', b'2394'), (b'Content-Length', b'189335'), (b'content-type', b'audio/mpeg'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-headers', b'*'), (b'access-control-allow-methods', b'POST, PATCH, OPTIONS, DELETE, GET, PUT'), (b'access-control-max-age', b'600'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000')])
+2024-06-27 01:13:07,158 - INFO - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/spa9IALJDrGWqKYWII2J "HTTP/1.1 200 OK"
+2024-06-27 01:13:07,158 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-06-27 01:13:07,299 - DEBUG - receive_response_body.complete
+2024-06-27 01:13:07,299 - DEBUG - response_closed.started
+2024-06-27 01:13:07,302 - DEBUG - response_closed.complete
+2024-06-27 01:13:07,302 - DEBUG - close.started
+2024-06-27 01:13:07,303 - DEBUG - close.complete

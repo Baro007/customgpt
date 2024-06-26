@@ -17,6 +17,31 @@ Welcome to AI Assistant, a cutting-edge application that brings the power of GPT
 ### Prerequisites
 
 - Python 3.8 or newer
+- API Keys:
+  - OpenAI API Key
+  - ElevenLabs API Key
+  - Serper API Key
+
+### API Requirements
+
+This project relies on several external APIs to function properly. You'll need to obtain API keys from the following services:
+
+1. **OpenAI API**: 
+   - Used for GPT-4 and Whisper models
+   - Sign up at [OpenAI](https://openai.com/api/)
+   - Pricing: Pay-as-you-go model
+
+2. **ElevenLabs API**:
+   - Used for text-to-speech conversion
+   - Sign up at [ElevenLabs](https://elevenlabs.io/)
+   - Pricing: Free tier available, paid plans for more usage
+
+3. **Serper API**:
+   - Used for web search functionality
+   - Sign up at [Serper](https://serper.dev/)
+   - Pricing: Free tier available, paid plans for more usage
+
+Once you have obtained these API keys, you'll need to add them to your `.env` file. See the Installation and Setup section for more details.
 
 ### Installation and Setup
 
@@ -24,36 +49,13 @@ Welcome to AI Assistant, a cutting-edge application that brings the power of GPT
 2. Open Terminal and navigate to the downloaded folder.
 3. Run the following command:
 
-   
+   ```bash
    chmod +x setup.sh && ./setup.sh
 
+When prompted, enter your API keys for OpenAI, ElevenLabs, and Serper.
 The application will start automatically once the installation is complete.
 
 Note: This application requires Python 3.8 or a newer version.
-Alternative Manual Setup
-If you prefer to set up the environment manually:
-
-Clone this repository:
-bash
-Copygit clone https://github.com/Baro007/customgpt
-cd ai-assistant
-
-Set up a virtual environment (recommended):
-bashCopypython3 -m venv myenv
-source myenv/bin/activate  # On Windows, use `myenv\Scripts\activate`
-
-Install the required packages:
-bashCopypip install openai elevenlabs httpx sounddevice soundfile numpy pillow python-dotenv PyQt5 qasync
-
-Create a .env file in the project root and add your API keys:
-CopyOPENAI_API_KEY=your_openai_api_key
-ELEVENLABS_API_KEY=your_elevenlabs_api_key
-VOICE_ID=your_elevenlabs_voice_id
-SERPER_API_KEY=your_serper_api_key
-
-Run the application:
-bashCopypython customgpt.py
-
 
 🖥 Usage
 
@@ -93,6 +95,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 OpenAI for GPT-4 and Whisper
 ElevenLabs for their realistic text-to-speech API
 The PyQt5 team for the excellent GUI framework
+Serper for Web Search
 
 
 Created with ❤️ by Mektep.ai
