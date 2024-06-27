@@ -1,1 +1,9 @@
+# Dosya türlerini yoksay
+*.log
+*.json
+
+# Özel klasörleri yoksay
+conversation_history/
+
+# Belirli dosyaları yoksay
 .env

@@ -218,5 +218,181 @@
   {
     "role": "assistant",
     "content": "Elbette, 34. sorunun çözümüne bakalım:\n\n**Soru:**\nOtuz beş günlük bir kız bebek öksürük ve solunum zorluğu yakınmalarıyla getiriliyor. Öyküsünden vajinal yolla zamanında doğduğu ve izleminde bilateral pürülan konjonktiviti saptandığı öğreniliyor.\n\nBu bebekte etken olarak öncelikle aşağıdakilerden hangisi düşünülmelidir? \n(Mayıs 2011)\n\nA) Streptococcus pyogenes\nB) Chlamydia trachomatis\nC) Mycoplasma pneumoniae\nD) Listeria monocytogenes\nE) Staphylococcus aureus\n\n**Çözüm:**\n\nVajinal yolla doğan bir bebekte ve doğum sonrası bilateral pürülan konjonktiviti olan bir bebekte akla gelmesi gereken öncelikli patojen **Chlamydia trachomatis** olmalıdır. Bu bakteri, doğum sırasında anneden bebeğe geçebilir ve sıklıkla neonatal konjonktivit ve sonrasında pnömoni ile ilişkilidir.\n\nDoğru cevap: B) Chlamydia trachomatis"
+  },
+  {
+    "role": "user",
+    "content": "Ekranda gördüğün 35. sorunun detaylı çözümü nedir?"
+  },
+  {
+    "role": "assistant",
+    "content": "Görüntüde yer alan 35. sorunun detaylı çözümü şu şekildedir:\n\n**Soru:**\nGelişme geriliği ve kronik ishal yakınmasıyla getirilen 3 yaşında bir çocuğun dışkı incelemesinde yağ 3+, yağ asidi 1+, pH 6, indirgen madde (-) olarak bulunuyor. Bu çocuk için en olası ön tanı aşağıdakilerden hangisidir?\n\n**Yanıt Seçenekleri:**\nA) Laktoz intoleransı\nB) Doğumsal sükraz-izomaltaz eksikliği\nC) Akrodermatitis enteropatika\nD) Kistik fibrozis\nE) Menkes hastalığı\n\n**Çözüm:**\n\n1. **Belirtiler ve Bulgular:**\n   - **Gelişme Geriliği:** Çocuğun yeterli düzeyde büyüme ve gelişme gösterememesi, altta yatan kronik bir hastalığın belirtisi olabilir.\n   - **Kronik İshal:** Üç yaşında bir çocukta sürekli dışkılamanın varlığı, malabsorpsiyon sendromları veya kronik gastrointestinal hastalıkları düşündürmelidir.\n   - **Dışkı İncelemesi Bulguları:**\n     - Yağ 3+: Yağın dışkıda bulunması (steatore) malabsorpsiyon problemi olduğunu gösterir.\n     - Yağ Asidi 1+: Yağ asitlerinin dışkıda bulunması yağ sindiriminin ve emiliminin bozulduğunu gösterir.\n     - pH 6: Hafif asidik dışkı pH'sı gastrointestinal problemlerle ilişkili olabilir, örneğin karbonhidrat malabsorpsiyonu.\n     - İndirgen madde (-): Laktoz intoleransı gibi durumlar genellikle pozitif indirgen madde sonuçları verir, burada bulunmaması laktoz intoleransı olasılığını azaltır.\n\n2. **Seçeneklerin Değerlendirilmesi:**\n   - **A) Laktoz intoleransı:** İndirgen madde testinin negatif olması laktoz intoleransını dışlar.\n   - **B) Doğumsal sükraz-izomaltaz eksikliği:** Bu durum genellikle kronik ishale neden olabilir, ancak burada belirtilen spesifik dışkı bulguları (yağ stazı) bu durumu yeterince desteklememektedir.\n   - **C) Akrodermatitis enteropatika:** Bu hastalık çinko emilim bozukluğu ile ilişkili olup dermatolojik belirtiler ve gelişim geriliğine neden olabilir, ancak belirtilen dışkı bulguları bu duruma özgü değildir.\n   - **D) Kistik fibrozis:** Kistik fibrozis, pankreas enzim eksikliği nedeniyle yağ emiliminin bozulmasına neden olur ve bu steatoreye (yağlı dışkı) yol açar. Ayrıca gelişme geriliği ve kronik ishal de bu hastalığın belirtileri arasındadır. Bu durum dışkıda yağ bulguları ile en uyumlu olanıdır.\n   - **E) Menkes hastalığı:** Bakır metabolizması bozukluğu hastalığıdır ve esas olarak nörolojik semptomlarla seyreder. Dışkı bulguları bu hastalığı desteklemez.\n\n**Sonuç:**\nEn olası ön tanı kistik fibrozis (D) olarak gözükmektedir, çünkü belirtiler ve dışkı bulguları bu hastalığın karakteristik bulgularıyla uyumludur.\n\n**Doğru Yanıt: D) Kistik fibrozis**"
+  },
+  {
+    "role": "user",
+    "content": "Ekranda gördüğün 39. sorunun cevabı nedir? Detaylıca açıkla lütfen."
+  },
+  {
+    "role": "assistant",
+    "content": "Bu görüntüde 39. sorunun sorusu ve şıkları aşağıda verilmiştir:\n\n### Soru 39:\nÇocukluk döneminde akciğer dışı tüberkülozun en sık görülen şekli aşağıdakilerden hangisidir? (Eylül 2012)\n\n### Şıklar:\nA) Tüberküloz menenjit\nB) Renal tüberküloz\nC) Tüberküloz lenfadenit\nD) Tüberküloz peritonit\nE) Tüberküloz perikardit\n\n### Cevap:\nDoğru cevap C) Tüberküloz lenfadenit\n\n### Detaylı Açıklama:\nÇocukluk döneminde akciğer dışı (ekstrapulmoner) tüberküloz vakalarının en sık görüleni tüberküloz lenfadenittir. Bu durum, tüberküloz bakterisinin lenf düğümlerine yerleşmesiyle karakterizedir ve genellikle servikal lenf düğümlerini etkiler. Özellikle çocuklarda, bağışıklık sistemi henüz tam anlamıyla gelişmediğinden, tüberküloz enfeksiyonu lenf düğümlerine kolayca yayılabilir. Tüberküloz lenfadenit diğer ekstrapulmoner tüberküloz formlarına göre daha yaygındır ve tanı konulması nispeten daha kolaydır.\n\nDiğer seçenekler daha nadir görülen ekstrapulmoner tüberküloz formları arasında yer alır:\n- **A) Tüberküloz menenjit:** Beyin zarlarının tüberküloz enfeksiyonudur, ciddi ve yaşamı tehdit eden bir durumdur.\n- **B) Renal tüberküloz:** Böbrekleri etkileyen tüberkülozdur.\n- **D) Tüberküloz peritonit:** Karın zarlarını etkileyen tüberkülozdur.\n- **E) Tüberküloz perikardit:** Kalbi çevreleyen zarların tüberküloz enfeksiyonudur.\n\nTüberküloz lenfadenit, diğerlerinden daha yaygın olduğu için çocukluk döneminde akciğer dışı tüberkülozun en sık görülen şekli olarak kabul edilir."
+  },
+  {
+    "role": "user",
+    "content": "You"
+  },
+  {
+    "role": "assistant",
+    "content": "Evet, sen mi yardıma ihtiyacın olan? Nerede yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "You"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "Rica ederim! Herhangi bir yardıma ihtiyacınız olursa her zaman buradayım. İyi günler!"
+  },
+  {
+    "role": "user",
+    "content": "you"
+  },
+  {
+    "role": "assistant",
+    "content": "Evet, ben buradayım! Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "you"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "you"
+  },
+  {
+    "role": "assistant",
+    "content": "Nasılsın? Sana nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "Sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir yapay zeka asistanıyım. Size bilgi vermek ve sorularınıza yanıt vermek için buradayım."
+  },
+  {
+    "role": "user",
+    "content": "Sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Selam! Ben bir AI asistanım. Sorularınıza yanıt verir ve size yardımcı olurum."
+  },
+  {
+    "role": "user",
+    "content": "Sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba, ben bir yapay zeka asistanıyım. Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "Sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Ben bir yapay zeka asistanıyım. Size yardımcı olmak için buradayım."
+  },
+  {
+    "role": "user",
+    "content": "Sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Hmm, biraz takıldım gibi görünüyor. Ben bir AI asistanım, size yardımcı olmak için buradayım."
+  },
+  {
+    "role": "user",
+    "content": "Merhaba, sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir AI asistanıyım. Size yardımcı olmak için buradayım. Siz kimsiniz?"
+  },
+  {
+    "role": "user",
+    "content": "Uh-huh"
+  },
+  {
+    "role": "assistant",
+    "content": "Evet, aynen öyle. Buradayım ve yardımcı olabilirim. Sormak istediğiniz bir şey var mı?"
+  },
+  {
+    "role": "user",
+    "content": "anan"
+  },
+  {
+    "role": "assistant",
+    "content": "Üzgünüm, ama bu tür bir dil ve üslup kullanmamayı tercih etsek daha iyi olur. Başka bir konuda yardımcı olabilir miyim?"
+  },
+  {
+    "role": "user",
+    "content": "Gözümde canlanır koskoca mazi"
+  },
+  {
+    "role": "assistant",
+    "content": "Ne güzel bir başlangıç! Eskilere gitmek iyi hissettirir. Bu şarkı sözleriyle ilgili bir anın mı var?"
+  },
+  {
+    "role": "user",
+    "content": "sevgilim nerede ben neredeyim"
+  },
+  {
+    "role": "assistant",
+    "content": "Sanırım biraz karışık hissediyorsun. Sana bu konuda yardımcı olabilir miyim?"
+  },
+  {
+    "role": "user",
+    "content": "nerde lan o he nerde o onu bana getirebilir misin"
+  },
+  {
+    "role": "assistant",
+    "content": "Maalesef, bunu yapamam. Ama belki konuşarak rahatlamana yardımcı olabilirim. Ne oldu, neden böyle hissediyorsun?"
+  },
+  {
+    "role": "user",
+    "content": "Merhaba, sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir yapay zeka asistanıyım. Sana bilgi sağlama veya sorularını yanıtlama konusunda yardımcı olabilirim. Ne hakkında konuşmak istersin?"
+  },
+  {
+    "role": "user",
+    "content": "Anladım peki teşekkür ederim."
+  },
+  {
+    "role": "assistant",
+    "content": "Rica ederim! Her zaman buradayım, başka bir şey sormak istersen. İyi günler dilerim!"
+  },
+  {
+    "role": "user",
+    "content": "Merhaba sen kimsin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir yapay zeka asistanıyım. Sana her türlü soruyu yanıtlamak için buradayım. Ne hakkında konuşmak istersin?"
   }
 ]
