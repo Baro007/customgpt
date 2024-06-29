@@ -394,5 +394,85 @@
   {
     "role": "assistant",
     "content": "Merhaba! Ben bir yapay zeka asistanıyım. Sana her türlü soruyu yanıtlamak için buradayım. Ne hakkında konuşmak istersin?"
+  },
+  {
+    "role": "user",
+    "content": "türkiye maçı hangi kanalda webde ara"
+  },
+  {
+    "role": "assistant",
+    "content": "Türkiye'nin yaklaşan maçı hakkında bilgi edinmek için en güncel ve detaylı verilere aşağıda yer alan kaynaklarda ulaşabilirsiniz:\n\n1. **NTV Spor**: Çekya - Türkiye maçı EURO 2024 hakkında bilgi almak için [bu linke](https://www.ntvspor.net/futbol/cekya-turkiye-maci-hangi-kanalda-cekya-turkiye-milli-mac-ne-zaman-saat-kacta-euro-2024-667a9b99a9444b004efe0cbd) tıklayabilirsiniz.\n2. **Sözcü**: Hırvatistan Türkiye maçı saat kaçta, hangi kanalda bilgisi için [Sözcü'nün haberine](https://www.sozcu.com.tr/hirvatistan-turkiye-maci-saat-kacta-hangi-kanalda-wp7828564) göz atabilirsiniz.\n3. **Spor Ekranı**: Türkiye maçlarının hangi kanalda yayınlandığını öğrenmek için [bu sayfayı](https://www.sporekrani.com/home/team/turkiye) ziyaret edebilirsiniz.\n4. **TRT 1**: Çekya - Türkiye maçı TRT 1'den canlı olarak yayınlanacak. (Hamburg Volkspark Stadı'nda, saat 22.00'da)\n\nBu kaynaklar üzerinden maçların tarih ve saat bilgilerini, hangi kanalda yayınlanacağını öğrenebilirsiniz."
+  },
+  {
+    "role": "user",
+    "content": "ekranda ne var şu anda"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekranda güzel bir doğa manzarası görünüyor. Yeşil ormanlar ve ağaçlarla kaplı dağlık bir alan var. Dağların tepelerinden inen yollar ve bazı tarlalar veya bağlar da görülüyor. Havada hafif bulutlar var ve manzara oldukça sakin ve huzurlu görünüyor."
+  },
+  {
+    "role": "user",
+    "content": "ekranda ne var"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekranda bir çevrimiçi toplantı (Google Meet) penceresi açık ve katılımcılardan biri bir içecek içerken görülüyor. Sağ tarafta bir yazı asistanı uygulaması açık ve yazı yazılabiliyor. Ayrıca ekranın üst kısmında çeşitli tarayıcı sekmeleri (Google Meet, Google AI, v.b.) açık durumda. Sol altta ve en alt kısımda farklı uygulama ikonları yer alıyor ve ekranın sağ alt köşesinde bazı bildirim ikonları görünüyor."
+  },
+  {
+    "role": "user",
+    "content": "Ekranda ne var şu anda?"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekranda bir çevrim içi toplantı (Google Meet) penceresi açık ve \"Barış Adıgüzel\" isimli kullanıcı ekranını paylaşıyor. Bu görüntü bir \"görüntü sonsuzluğuna\" yol açmış, paylaşımı yapılan ekranın içinde ekranın kendi görüntüsü art arda yansımış. \n\n- Üstte birçok tarayıcı sekmesi açık: YouTube, Açık Radyo 95.0, Future Generation, Quizlet, Duolingo, Glosbe Sözlük, Google Çeviri ve AnkiWeb gibi.\n- Sağda \"AI Asistan\" isimli bir uygulama açık, burada bir metin giriş alanı var ve bir metnin sesli yanıtı üzerinde çalışılıyor.\n- Ekranın sağ üst kısmında bir dizi uygulama ikonları (kamera, ses, pil durumu, saat vb.) ve sağ alt köşesinde bazı bildirim ikonları görünüyor."
+  },
+  {
+    "role": "user",
+    "content": "selam sen kimsin"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! Ben bir yapay zeka asistanıyım. Sorularına yanıt vermek, bilgi sağlamak veya sohbet etmek için buradayım. Sana nasıl yardımcı olabilirim?"
+  },
+  {
+    "role": "user",
+    "content": "ekrandaki kişilerin ruh hali nasıl gözüküyor"
+  },
+  {
+    "role": "assistant",
+    "content": "Ekrandaki kişilerin ruh halleri şu şekilde görünüyor:\n\n- Sol üstteki kişi (Serhad Şengul): Diyalog içinde gibi görünüyor. El hareketi yapıyor ve konuşuyor olabilir.\n- Sağ üstteki kişi (Bahadır Buldur): Ciddi ve odaklanmış duruyor.\n- Alttaki kişi (Barış Adıgüzel): Hafif gülümseyen ve rahat bir ruh hali içinde görünüyor.\n\nGenel olarak katılımcılar çeşitli şekillerde etkileşimde bulunuyor ve toplantıya odaklanmışlar gibi görünüyor."
+  },
+  {
+    "role": "user",
+    "content": "Thank you for watching."
+  },
+  {
+    "role": "assistant",
+    "content": "Rica ederim! Başka bir şey var mı, yoksa yardıma ihtiyaç duyduğun bir konu var mı?"
+  },
+  {
+    "role": "user",
+    "content": "Buz devrindeki Mahmut'un ismi neydi?"
+  },
+  {
+    "role": "assistant",
+    "content": "Buz Devri serisindeki mamutun ismi Manny'ydi. Orijinal adı ise Manfred."
+  },
+  {
+    "role": "user",
+    "content": "Ekranda gördüğün kanvayla tasarlanmış bu sitede gezinti çubuğunu şu özellikler neden ayağın başla fiyatlar destek yazan kısım yani nasıl değiştirebileceğimi bilmiyorum bana bu konuda yardımcı olur musun?"
+  },
+  {
+    "role": "assistant",
+    "content": "Elbette, gezinti çubuğunu değiştirmek için izleyebileceğiniz adımlar genellikle şu şekildedir:\n\n1. **HTML Kodu:**\n   - Web sitenizin HTML dosyasını açın.\n   - Menü çubuğunu bulmak için `<nav>`, `<ul>` veya `<li>` gibi HTML etiketlerini arayın.\n   - Menü elemanlarını değiştirmek için `<li><a href=\"oryasıyada.html\">Bağlantı</a></li>` gibi kodları değiştirin.\n\nÖrneğin:\n```html\n<nav>\n  <ul>\n    <li><a href=\"#ozellikler\">Özellikler</a></li>\n    <li><a href=\"#hayyam\">Neden Hayyam?</a></li>\n    <li><a href=\"#basla\">Başla</a></li>\n    <li><a href=\"#fiyatlar\">Fiyatlar</a></li>\n    <li><a href=\"#destek\">Destek</a></li>\n  </ul>\n</nav>\n```\n\nBu kodda, menü elemanlarını `Özellikler`, `Neden Hayyam?`, `Başla`, `Fiyatlar` ve `Destek` olarak belirlemişiz.\n\n2. **CSS Kodu:**\n   - CSS dosyanızı açın.\n   - Menü elemanlarının stilini değiştirmek istiyorsanız, ilgili CSS seçicilerini bulun ve düzenleyin.\n\nÖrneğin:\n```css\nnav ul {\n  list-style-type: none;\n  padding: 0;\n}\n\nnav ul li {\n  display: inline;\n  margin-right: 10px;\n}\n\nnav ul li a {\n  text-decoration: none;\n  color: #000;\n}\n```\n\nBu kod, menünüzün yatay olarak görüntülenmesini ve bağlantılarının belirli bir stil almasını sağlar.\n\n3. **JavaScript:**\n   - Eğer menüde herhangi bir dinamik öğe varsa (örneğin, açılır menüler), ilgili JavaScript kodunu bulun ve düzenleyin.\n\nÖrneğin:\n```javascript\ndocument.querySelector('nav ul li a').addEventListener('click', function(e) {\n  e.preventDefault();\n  // Menü bağlantısına tıklandığında yapılacak iş\n});\n```\n\nBu genel adımlar, menü çubuğunuzu nasıl değiştirebileceğinize dair bir bakış sağlar. Kullandığınız platforma veya tasarım aracına bağlı olarak (örneğin, Canva, WordPress), adımlar biraz farklılık gösterebilir. Örneğin, Canva gibi bir araç kullanıyorsanız, tasarımı düzenlemek için Canva'nın web tasarım araçlarını kullanmanız gerekecektir.\n\nUmarım bu bilgiler yardımcı olur! Eğer belirli bir konuda daha detaylı yardıma ihtiyaç duyuyorsanız, lütfen belirtin."
+  },
+  {
+    "role": "user",
+    "content": "muhtemelen çocukluğunu yaptığı hataları diğer çocukların üstüne atarak, yaptığı hataları kabul etmenin cesaretini göstermedi. koca çınar yaşlandın lütfen ve lütfen bırak artık. bak seninde sevdiğin bu topraklarda insanlar açlıktan yakınıyor, mafya devletin işleri ile sansasyonel açıklamalar yapıyor doğru veya yanlıştan bağımsız. insanlar çok cahil kaldı, bilimden uzak kalarak layık olmadığımız doğal yapay türlü felaketlere maruz kalıyoruz. lütfen ve lütfen, yaptıkların için teşekkürler ama izin ver su aksın yatağını bulsun bu mesajı düzenle lütfen, anlatım bozuklukları düzelsin istiyorum"
+  },
+  {
+    "role": "assistant",
+    "content": "Tabii, mesajını düzenleyip anlatım bozukluklarını gidereyim:\n\n---\n\nMuhtemelen çocukluğunda yaptığı hataları diğer çocukların üstüne atarak, hatalarını kabul etmenin cesaretini gösteremedin. Koca çınar, yaşlandın; lütfen artık bırak. Bak, senin de sevdiğin bu topraklarda insanlar açlıktan yakınıyor, mafya devletin işleriyle ilgili sansasyonel açıklamalar yapıyor. Doğru veya yanlış fark etmeksizin, insanlar çok cahil kaldı. Bilimden uzak kalarak, layık olmadığımız doğal ve yapay felaketlere maruz kalıyoruz. Lütfen, yaptıkların için teşekkürler ama izin ver su aksın, yatağını bulsun.\n\n---\n\nUmarım bu haliyle mesajın anlatım bozukluklarından arınmış olur ve istediğin gibi olur. Başka bir şey var mı?"
   }
 ]

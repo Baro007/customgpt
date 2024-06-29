@@ -86,7 +86,7 @@ class AIAssistant(QMainWindow):
     print(f"Serper API Key: {SERPER_API_KEY[:5]}...{SERPER_API_KEY[-5:]}")
     
     def initUI(self):
-        self.setWindowTitle('AI Asistan')
+        self.setWindowTitle('Barış AI')
         self.setGeometry(100, 100, 400, 500)
 
         central_widget = QWidget()
