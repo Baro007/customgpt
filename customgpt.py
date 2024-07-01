@@ -18,9 +18,10 @@ from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 from PIL import ImageGrab
 from dotenv import load_dotenv
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea, QLineEdit
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QLabel, QTextEdit, QScrollArea, QLineEdit, QComboBox
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 import qasync
+import anthropic
 
 # API anahtarlarını ve diğer konfigürasyonları yükle
 load_dotenv()
@@ -28,6 +29,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 VOICE_ID = os.getenv("VOICE_ID")
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 # Logging ayarları
 logging.basicConfig(
@@ -75,6 +77,7 @@ class AIAssistant(QMainWindow):
     def __init__(self):
         super().__init__()
         self.is_muted = False # Başlangıçta sesi açık olarak ayarlayın
+        self.claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
         self.initUI()
         self.recorder = AudioRecorder()
         self.recorder.finished.connect(self.on_recording_finished)
@@ -84,6 +87,7 @@ class AIAssistant(QMainWindow):
     print(f"OpenAI API Key: {OPENAI_API_KEY[:5]}...{OPENAI_API_KEY[-5:]}")
     print(f"ElevenLabs API Key: {ELEVENLABS_API_KEY[:5]}...{ELEVENLABS_API_KEY[-5:]}")
     print(f"Serper API Key: {SERPER_API_KEY[:5]}...{SERPER_API_KEY[-5:]}")
+    print(f"Anthropic API Key: {ANTHROPIC_API_KEY[:5]}...{ANTHROPIC_API_KEY[-5:]}")
     
     def initUI(self):
         self.setWindowTitle('Barış AI')
@@ -115,6 +119,10 @@ class AIAssistant(QMainWindow):
         self.send_button = QPushButton('Gönder', self)
         self.send_button.clicked.connect(self.send_text_input)
         layout.addWidget(self.send_button)
+
+        self.model_selector = QComboBox(self)
+        self.model_selector.addItems(["GPT-4", "Claude 3.5 Sonnet"])
+        layout.addWidget(self.model_selector)
 
         self.status_label = QLabel('Hazır', self)
         layout.addWidget(self.status_label)
@@ -151,7 +159,7 @@ class AIAssistant(QMainWindow):
             elif action == "2":
                 response_text = await self.perform_web_search(user_input)
             else:
-                response_text = await self.get_gpt4_response(user_input)
+                response_text = await self.get_ai_response(user_input)
 
             if response_text is None:
                 response_text = "Üzgünüm, bir cevap üretilemedi."
@@ -160,7 +168,7 @@ class AIAssistant(QMainWindow):
             self.update_response_area()
             self.save_conversation_history()
 
-            await self.print_gpt4_response(response_text)
+            await self.print_ai_response(response_text)
 
             if not self.is_muted: # Sadece ses açıksa konuştur
                 audio_array, samplerate = await self.text_to_speech(response_text)
@@ -240,7 +248,7 @@ class AIAssistant(QMainWindow):
             elif action == "2":
                 response_text = await self.perform_web_search(user_input)
             else:
-                response_text = await self.get_gpt4_response(user_input)
+                response_text = await self.get_ai_response(user_input)
 
             if response_text is None:
                 response_text = "Üzgünüm, bir cevap üretilemedi."
@@ -251,7 +259,7 @@ class AIAssistant(QMainWindow):
             self.update_response_area()
             self.save_conversation_history()
 
-            await self.print_gpt4_response(response_text)
+            await self.print_ai_response(response_text)
 
             if not self.is_muted:
                 audio_array, samplerate = await self.text_to_speech(response_text)
@@ -293,29 +301,59 @@ class AIAssistant(QMainWindow):
         os.remove(file_name)
         return user_input
 
-    async def get_gpt4_response(self, user_input):
-        system_message = {
-            "role": "system",
-            "content": "Sen bir insanla sohbet eden bir AI asistanısın. Kısa, öz ve doğal cevaplar ver. Günlük konuşma dilini kullan, akademik veya resmi bir ton kullanma. Cevapların genellikle 1-3 cümle arasında olsun. İnsanlar gibi bazen küçük hatalar yapabilir veya tereddüt edebilirsin."
-        }
+    async def get_ai_response(self, user_input):
+        system_message = "Sen bir insanla sohbet eden bir AI asistanısın. Kısa, öz ve doğal cevaplar ver. Günlük konuşma dilini kullan, akademik veya resmi bir ton kullanma. Cevapların genellikle 1-3 cümle arasında olsun. İnsanlar gibi bazen küçük hatalar yapabilir veya tereddüt edebilirsin."
 
-        messages = [system_message] + conversation_history[-10:]  # Son 10 mesajı kullan
+        selected_model = self.model_selector.currentText()
 
-        async with httpx.AsyncClient(timeout=None) as client:
-            headers = {
-                "Authorization": f"Bearer {OPENAI_API_KEY}",
-                "Content-Type": "application/json",
-            }
-            data = {
-                "model": "gpt-4o",
-                "messages": messages,
-            }
-            response = await client.post(
-                "https://api.openai.com/v1/chat/completions", headers=headers, json=data
-            )
-            response.raise_for_status()
-            response_data = response.json()
-        return response_data['choices'][0]['message']['content']
+        if selected_model == "GPT-4":
+            # Mevcut GPT-4 kodu aynı kalabilir
+            async with httpx.AsyncClient(timeout=None) as client:
+                headers = {
+                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                    "Content-Type": "application/json",
+                }
+                data = {
+                    "model": "gpt-4",
+                    "messages": [
+                        {"role": "system", "content": system_message},
+                        {"role": "user", "content": user_input}
+                    ],
+                }
+                response = await client.post(
+                    "https://api.openai.com/v1/chat/completions", headers=headers, json=data
+                )
+                response.raise_for_status()
+                response_data = response.json()
+            return response_data['choices'][0]['message']['content']
+
+        elif selected_model == "Claude 3.5 Sonnet":
+            try:
+                message = self.claude_client.messages.create(
+                    model="claude-3-5-sonnet-20240620",
+                    max_tokens=1000,
+                    temperature=0,
+                    system=system_message,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": user_input
+                                }
+                            ]
+                        }
+                    ]
+                )
+                return message.content[0].text
+            except anthropic.APIError as e:
+                print(f"Claude API Error: {str(e)}")
+                return f"Claude API Error: {str(e)}"
+            except Exception as e:
+                print(f"Unexpected error with Claude API: {str(e)}")
+                return f"Unexpected error with Claude API: {str(e)}"
+            
 
     def capture_screen(self):
         screenshot = ImageGrab.grab()
@@ -354,7 +392,7 @@ class AIAssistant(QMainWindow):
         Aşağıdaki kullanıcı sorgusunu analiz edin ve hangi eylemi gerçekleştirmemiz gerektiğine karar verin:
         1. Ekran görüntüsü analizi
         2. Web araması
-        3. Normal GPT-4 yanıtı
+        3. Normal AI yanıtı
         Sadece '1', '2' veya '3' olarak cevaplayın.
         Kullanıcı Sorgusu: "{query}"
         Eğer sorgu ekrandaki bir şeyle ilgiliyse veya görsel analiz gerektiriyorsa 1'i seçin.
@@ -411,14 +449,14 @@ class AIAssistant(QMainWindow):
             if not search_results:
                 return "Arama sonuçları bulunamadı."
             
-            response_text = await self.process_search_results_with_gpt4(query, search_results)
+            response_text = await self.process_search_results_with_ai(query, search_results)
             return response_text
         except Exception as e:
             print(f"Error in perform_web_search: {str(e)}")
             return f"Web araması sırasında bir hata oluştu: {str(e)}"
 
-    async def process_search_results_with_gpt4(self, query, search_results):
-        print("Processing search results with GPT-4")
+    async def process_search_results_with_ai(self, query, search_results):
+        print("Processing search results with AI")
         if not search_results:
             return "Arama sonuçları işlenemedi."
         
@@ -430,28 +468,13 @@ class AIAssistant(QMainWindow):
         """
 
         try:
-            async with httpx.AsyncClient(timeout=None) as client:
-                headers = {
-                    "Authorization": f"Bearer {OPENAI_API_KEY}",
-                    "Content-Type": "application/json",
-                }
-                data = {
-                    "model": "gpt-4o",
-                    "messages": [{"role": "user", "content": prompt}],
-                }
-                response = await client.post(
-                    "https://api.openai.com/v1/chat/completions", headers=headers, json=data
-                )
-                response.raise_for_status()
-                response_data = response.json()
-
-            return response_data['choices'][0]['message']['content']
+            return await self.get_ai_response(prompt)
         except Exception as e:
-            print(f"Error in process_search_results_with_gpt4: {str(e)}")
+            print(f"Error in process_search_results_with_ai: {str(e)}")
             return f"Arama sonuçları işlenirken bir hata oluştu: {str(e)}"
 
-    async def print_gpt4_response(self, response_text):
-        print("GPT-4 Yanıtı:", response_text)
+    async def print_ai_response(self, response_text):
+        print("AI Yanıtı:", response_text)
 
     async def text_to_speech(self, text):
         async with httpx.AsyncClient(timeout=None) as client:

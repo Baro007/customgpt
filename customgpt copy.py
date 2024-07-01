@@ -74,6 +74,7 @@ class AudioRecorder(QThread):
 class AIAssistant(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.is_muted = False # Başlangıçta sesi açık olarak ayarlayın
         self.initUI()
         self.recorder = AudioRecorder()
         self.recorder.finished.connect(self.on_recording_finished)
@@ -85,7 +86,7 @@ class AIAssistant(QMainWindow):
     print(f"Serper API Key: {SERPER_API_KEY[:5]}...{SERPER_API_KEY[-5:]}")
     
     def initUI(self):
-        self.setWindowTitle('AI Asistan')
+        self.setWindowTitle('Barış AI')
         self.setGeometry(100, 100, 400, 500)
 
         central_widget = QWidget()
@@ -101,6 +102,11 @@ class AIAssistant(QMainWindow):
         self.stop_button.clicked.connect(self.stop_recording)
         self.stop_button.setEnabled(False)
         layout.addWidget(self.stop_button)
+
+        self.mute_button = QPushButton('Sesli Cevap Kapat', self)
+        self.mute_button.setCheckable(True)
+        self.mute_button.clicked.connect(self.toggle_mute)
+        layout.addWidget(self.mute_button)
 
         self.text_input = QLineEdit(self)
         self.text_input.setPlaceholderText("Metin girin ve 'Gönder' butonuna tıklayın")
@@ -121,6 +127,10 @@ class AIAssistant(QMainWindow):
         layout.addWidget(scroll_area)
 
         central_widget.setLayout(layout)
+
+    def toggle_mute(self):
+        self.is_muted = self.mute_button.isChecked()
+        print(f"Sesli cevap {'kapatıldı' if self.is_muted else 'açık'}")
 
     def send_text_input(self):
         user_input = self.text_input.text().strip()
@@ -152,9 +162,10 @@ class AIAssistant(QMainWindow):
 
             await self.print_gpt4_response(response_text)
 
-            audio_array, samplerate = await self.text_to_speech(response_text)
-            sd.play(audio_array, samplerate=samplerate)
-            sd.wait()
+            if not self.is_muted: # Sadece ses açıksa konuştur
+                audio_array, samplerate = await self.text_to_speech(response_text)
+                sd.play(audio_array, samplerate=samplerate)
+                sd.wait()
 
             self.status_label.setText("Hazır")
         except Exception as e:
@@ -242,9 +253,10 @@ class AIAssistant(QMainWindow):
 
             await self.print_gpt4_response(response_text)
 
-            audio_array, samplerate = await self.text_to_speech(response_text)
-            sd.play(audio_array, samplerate=samplerate)
-            sd.wait()
+            if not self.is_muted:
+                audio_array, samplerate = await self.text_to_speech(response_text)
+                sd.play(audio_array, samplerate=samplerate)
+                sd.wait()
 
             self.status_label.setText("Hazır")
         except Exception as e:
@@ -295,7 +307,7 @@ class AIAssistant(QMainWindow):
                 "Content-Type": "application/json",
             }
             data = {
-                "model": "gpt-4",
+                "model": "gpt-4o",
                 "messages": messages,
             }
             response = await client.post(
@@ -322,7 +334,7 @@ class AIAssistant(QMainWindow):
             "Content-Type": "application/json",
         }
         data = {
-            "model": "gpt-4",
+            "model": "gpt-4o",
             "messages": [
                 {"role": "user", "content": [
                     {"type": "text", "text": query},
@@ -355,7 +367,7 @@ class AIAssistant(QMainWindow):
                 "Content-Type": "application/json",
             }
             data = {
-                "model": "gpt-4",
+                "model": "gpt-4o",
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.0,
             }
@@ -424,7 +436,7 @@ class AIAssistant(QMainWindow):
                     "Content-Type": "application/json",
                 }
                 data = {
-                    "model": "gpt-4",
+                    "model": "gpt-4o",
                     "messages": [{"role": "user", "content": prompt}],
                 }
                 response = await client.post(

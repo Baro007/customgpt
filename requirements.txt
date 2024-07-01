@@ -9,3 +9,4 @@ pillow
 python-dotenv
 PyQt5
 qasync
+anthropic
