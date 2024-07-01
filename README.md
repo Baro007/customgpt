@@ -1,18 +1,18 @@
-# AI Assistant: Your Personal GPT-4 and Claude-Powered Companion
+AI Assistant: Your Personal GPT-4 and Claude-Powered Companion
 
-![AI Assistant Logo]()
 
-Welcome to AI Assistant, a cutting-edge application that brings the power of GPT-4 and Claude 3.5 Sonnet to your fingertips. This intelligent assistant can understand speech, analyze images, and engage in natural conversations, all while providing responses in a lifelike voice.
+
+Welcome to AI Assistant, a cutting-edge application that harnesses the power of GPT-4 and Claude 3.5 Sonnet to provide an intelligent, multi-modal interaction experience. This sophisticated assistant understands speech, analyzes images, engages in natural conversations, and delivers responses in a lifelike voice.
 
 ## 🌟 Features
 
-- **Multi-Modal Interaction**: Communicate via text, voice, or even screen captures!
-- **Voice-Powered**: Utilizes OpenAI's Whisper for accurate speech-to-text conversion.
-- **Lifelike Responses**: ElevenLabs API transforms text responses into natural-sounding speech.
-- **Visual Understanding**: Analyze screenshots and images with GPT-4's advanced vision capabilities.
-- **Web Search Integration**: Get up-to-date information on any topic.
-- **Dual AI Models**: Switch between GPT-4 and Claude 3.5 Sonnet for diverse AI experiences.
-- **Intuitive GUI**: User-friendly interface built with PyQt5.
+- **Dual AI Models**: Choose between GPT-4 and Claude 3.5 Sonnet for varied AI experiences
+- **Multi-Modal Interaction**: Communicate via text, voice, or even screen captures
+- **Voice-Powered**: Utilizes OpenAI's Whisper for accurate speech-to-text conversion
+- **Lifelike Responses**: ElevenLabs API transforms text responses into natural-sounding speech
+- **Visual Understanding**: Analyze screenshots and images with advanced vision capabilities
+- **Web Search Integration**: Access up-to-date information on any topic
+- **Intuitive GUI**: User-friendly interface built with PyQt5
 
 ## 🚀 Quick Start
 
@@ -27,7 +27,7 @@ Welcome to AI Assistant, a cutting-edge application that brings the power of GPT
 
 ### API Requirements
 
-This project relies on several external APIs to function properly. You'll need to obtain API keys from the following services:
+This project relies on several external APIs:
 
 1. **OpenAI API**: 
    - Used for GPT-4 and Whisper models
@@ -47,67 +47,79 @@ This project relies on several external APIs to function properly. You'll need t
 4. **Anthropic API**:
    - Used for Claude 3.5 Sonnet model
    - Sign up at [Anthropic](https://www.anthropic.com/)
-   - Pricing: Pay-as-you-go model
-
-Once you have obtained these API keys, you'll need to add them to your `.env` file. See the Installation and Setup section for more details.
+   - Pricing: Check Anthropic's website for current pricing
 
 ### Installation and Setup
 
-1. Clone or download this repository to your computer.
-2. Open Terminal and navigate to the downloaded folder.
-3. Run the following command:
+1. Clone or download this repository:
 
+
+2. Run the setup script:
    ```bash
+
    chmod +x setup.sh && ./setup.sh
 
-When prompted, enter your API keys for OpenAI, ElevenLabs, Serper, and Anthropic.
-The application will start automatically once the installation is complete.
+   ```
+
+3. When prompted, enter your API keys for OpenAI, ElevenLabs, Serper, and Anthropic. (LOOK .envexample)
+
+4. The application will start automatically once the installation is complete.
 
 Note: This application requires Python 3.8 or a newer version.
-🖥 Usage
 
-Launch the application.
-Use the dropdown menu to select between GPT-4 and Claude 3.5 Sonnet.
-Click the "Speak" button to start recording your voice input.
-Click "Stop" when you're done speaking.
-Wait for the AI to process your input and listen to its response.
-For text input or screenshot analysis, use the appropriate buttons in the UI.
+## 🖥 Usage
 
-🛠 Key Components
+1. Launch the application.
+2. Choose your preferred AI model (GPT-4 or Claude 3.5 Sonnet) from the dropdown menu.
+3. For voice input:
+   - Click the "Speak" button to start recording.
+   - Click "Stop" when you're done speaking.
+4. For text input:
+   - Type your message in the text box and click "Send".
+5. For screenshot analysis:
+   - Capture a screenshot and the AI will analyze it.
+6. Toggle the "Mute" button to enable/disable voice responses.
+7. Wait for the AI to process your input and listen to or read its response.
 
-AudioRecorder: Handles voice input recording.
-AIAssistant: Main class that orchestrates all functionalities.
-text_to_speech: Converts text responses to speech using ElevenLabs API.
-perform_web_search: Integrates web search capabilities.
-analyze_screenshot: Processes and analyzes screen captures.
-get_ai_response: Manages responses from both GPT-4 and Claude models.
+## 🛠 Key Components
 
-🧠 How It Works
+- **AudioRecorder**: Handles voice input recording.
+- **AIAssistant**: Main class orchestrating all functionalities.
+- **text_to_speech**: Converts text responses to speech using ElevenLabs API.
+- **perform_web_search**: Integrates web search capabilities.
+- **analyze_screenshot**: Processes and analyzes screen captures.
+- **get_ai_response**: Manages interactions with GPT-4 and Claude models.
 
-User input (voice/text/image) is captured and processed.
-The input is sent to the selected AI model (GPT-4 or Claude) for analysis and response generation.
-If needed, web searches or image analysis are performed.
-The AI's response is converted to speech and played back to the user.
+## 🧠 How It Works
 
-📈 Future Enhancements
+1. User input (voice/text/image) is captured and processed.
+2. The input is sent to the selected AI model (GPT-4 or Claude) for analysis and response generation.
+3. If needed, web searches or image analysis are performed.
+4. The AI's response is converted to speech (if not muted) and played back to the user.
 
-Implement conversation memory for more contextual interactions.
-Add support for multiple languages.
-Integrate more AI models for specialized tasks.
-Develop a mobile application version.
-Enhance the GUI for better user experience.
-Implement real-time model switching without restarting the application.
+## 📈 Future Enhancements
 
-🤝 Contributing
+- Implement conversation memory for more contextual interactions.
+- Add support for multiple languages.
+- Integrate more AI models for specialized tasks.
+- Develop a mobile application version.
+- Enhance the GUI for a more polished user experience.
+
+## 🤝 Contributing
+
 We welcome contributions! Please feel free to submit a Pull Request.
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-🙏 Acknowledgements
 
-OpenAI for GPT-4 and Whisper
-Anthropic for Claude 3.5 Sonnet
-ElevenLabs for their realistic text-to-speech API
-The PyQt5 team for the excellent GUI framework
-Serper for Web Search
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- OpenAI for GPT-4 and Whisper
+- Anthropic for Claude 3.5 Sonnet
+- ElevenLabs for their realistic text-to-speech API
+- The PyQt5 team for the excellent GUI framework
+- Serper for Web Search capabilities
 
 Created with ❤️ by Mektep.ai
+```
