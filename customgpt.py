@@ -314,7 +314,7 @@ class AIAssistant(QMainWindow):
                     "Content-Type": "application/json",
                 }
                 data = {
-                    "model": "gpt-4",
+                    "model": "gpt-4o",
                     "messages": [
                         {"role": "system", "content": system_message},
                         {"role": "user", "content": user_input}

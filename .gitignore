@@ -9,3 +9,5 @@ conversation_history/
 .env
 app.log
 conversation_history.json
+*.json
+*.log
