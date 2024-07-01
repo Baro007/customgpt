@@ -7,3 +7,5 @@ conversation_history/
 
 # Belirli dosyaları yoksay
 .env
+app.log
+conversation_history.json
